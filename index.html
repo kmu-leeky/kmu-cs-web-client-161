@@ -4,76 +4,148 @@
   <title>The real first homework</title>
 </head>
 <body>
-  <p style="font-size:200%;" id="kmu-id">KMU ID:</p>
-  <p style="font-size:200%;">Name:</p>
+  <p style="font-size:200%;" id="kmu-id">KMU ID : 20113255</p>
+  <p style="font-size:200%;">Name : Kim Do Kyeong</p>
   <p style="font-size:150%;">This homework is to have you a chance to apply knowlege and tags that you learned during the WebClient Computing course. The answer should be written in a valid HTML form. <strong>You can write answers in Korean. If you have difficulties in understanding the question, please let me know!</strong>. <a href = "kmu-cs-web-client-161.slack.com">Slack</a> or <a href="mailto:leeky@kookmin.ac.kr">E-mail</a> <br>This homework has to be submitted by <time datetime="2016-04-07T23:59">April 7th.</time>. Late submission will be deducted 10% of points per each delayed day - no points after 10 days.</p>
 
   <h1>Understanding HTML Concepts</h1>
   <ol>
     <li>What does HTML stand for? (1 point) 
       <ul>
-        <li>H : </li>
-        <li>T : </li>
-        <li>M : </li>
-        <li>L : </li>
+        <li>H : Hyper</li>
+        <li>T : Text</li>
+        <li>M : Markup</li>
+        <li>L : Language</li>
       </ul>
     </li>
     <li>Describe difference between Markup language(HTML) and Programming language, such as Java (10 point)</li>
     <div>
-      Answer: 
+      Answer: Markup Language는 data나 문서의 구조를 나타내며, 컴퓨터로 실행항는 programming language랑은 다르다.
     </div>
     <li>Describe what do the following tags mean(4 point)</li>
     <ul>
-        <li>pre: </li>
-        <li>p: </li>
-        <li>br: </li>
-        <li>h1, h2, h3, h4, h5, h6: </li>
+        <li>pre: pre 태그를 사용하지 않으면 문장 내에 엔터, 탭, 스페이스바 등을 인식하지 못하는데, pre태그 안에 있는 엔터, 탭, 스페이스바 등이 인식 가능하다. html에서의 형태 그대로 보여진다.
+        <li>p: paragraph </li>
+        <li>br: 새로운 줄을 추가할때 사용한다.</li>
+        <li>h1, h2, h3, h4, h5, h6: 컨텐츠의 계층구조를 표현할때 사용한다. h1이 가장 상위에오는 주제가 된다.</li>
       </ul>
     </li>
-    <li>Describe diffrence between using <q>strong, em</q> tag and <q>b, i</q> tag (5 point). Answer: </li>
-    <li>In the img tag, describe what <q>alt</q> tag means and how it differs from <q>title</q> attribute(5 point). Answer: </li>
-    <li>In table, describe difference between <q>th</q> and <q>td</q> (5 point). Answer: </li>
+    <li>Describe diffrence between using <q>strong, em</q> tag and <q>b, i</q> tag (5 point). 
+       <div>
+      Answer: "b, i" 태그는 단순한 스타일링이고, "strong, em" 태그는 강조의 의미를 준것이다. 
+    </div> </li>
+    <li>In the img tag, describe what <q>alt</q> tag means and how it differs from <q>title</q> attribute(5 point).      <div>
+Answer:  "alt"는 이미지가 보여지지 않을때 보여지는 메세지이고,  "title"은 이미지에 마우스 포인트를 올렸을때 보여지는 메세지이다.
+</div></li>
+    <li>In table, describe difference between <q>th</q> and <q>td</q> (5 point).
+ <div> Answer: td는 table에서 가로줄을 의미하고, th는  table에서 head를 의미하며,  굵은 글씨체로 가운데 정렬되어 나타낸다.
+ </div></li>
   </ol>
 
   <h1>Using HTML Tags</h1>
   <ol>
-    <li>Write a html statement to make a link to http://cs.kookmin.ac.kr where the link string is KMU-CS (5 points) Answer: </li>
-    <li>Write a html statement to make a link to http://cs.kookmin.ac.kr where the link string is KMU-CS and opens in a new tab (5 points) Answer: </li>
-    <li>Write a html statement to make a link to http://cs.kookmin.ac.kr where the link shows a smiley.gif image in the figure folder (5 point) Answer: </li>
-    <li>Make a link to <q>kmu-id</q> paragraph in the begining of this homework (5 point) Answer: </li>
-    <li>In the next answer sentence, add extra importance to a string <q>fun</q>. (3 points) Answer: HTML homework is fun</li>
+    <li>Write a html statement to make a link to http://cs.kookmin.ac.kr where the link string is KMU-CS (5 points) <div> Answer: <a href="http://cs.kookmin.ac.kr">KMU-CS</a></div> </li>
+    <li>Write a html statement to make a link to http://cs.kookmin.ac.kr where the link string is KMU-CS and opens in a new tab (5 points) <div>Answer: <a href="http://cs.kookmin.ac.kr", target="_blank">KMU-CS </a></div> </li>
+    <li>Write a html statement to make a link to http://cs.kookmin.ac.kr where the link shows a smiley.gif image in the figure folder (5 point) 
+     <div> Answer: <a href="http://cs.kookmin.ac.kr"> <img src="files/smiley.gif"> </a></div></li>
+    <li>Make a link to <q>kmu-id</q> paragraph in the begining of this homework (5 point) 
+     <div>Answer: <a href="#kmu-id">jump to "kmu-id" </a> </div></li>
+    <li>In the next answer sentence, add extra importance to a string <q>fun</q>. (3 points)
+     <div>Answer: HTML homework is <strong><em><font color="red">fun</font></strong></em></div></li>
     <li>Create a video rendering tag that will automatically play as soon as it is ready, continue to play (loop), and show control bar. video source in the files/movie.mp4 (5 point)</li>
     <div>
-      Answer: 
+      Answer: <video width="500" controls loop autoplay> <source src="files/movie.mp4" type="video/mp4"> </video>
     </div>
-    <li>Add a PDF file to be rednered on a browser. source file - files/table-quiz.pdf (5 points)</li>
+    <li>Add a PDF file to be rednered on a browser. source file - files/table-quiz.pdf (5 points)
+     <div> Answer: <embed type="application/pdf" src="files/table-quiz.pdf" ></embed> </div></li>
     <li>Change the following ordered list to unordered list (2 point)
-      <ol>
+      <ul>
         <li>apple</li>
         <li>banana</li>
-      </ol>
+      </ul>
     </li>
     <li>Change the following ordered list numbering to capital roman character (5 point) 
-      <ol>
+      <ol type="I">
         <li>apple</li>
         <li>banana</li>
       </ol>
     </li>
-    <li>Create an input field that gets 13 digit telephone number (5 point) Answer: </li>
-    <li>Create an input field with a radio button to select male and female exclusively (5 points) Answer: </li>
-    <li>Create a submit and cancel button inside a form element (2 points) Answer: </li>
-    <li>Create a datetime input format to get date as an input (3 points) Answer: </li>
+    <li>Create an input field that gets 13 digit telephone number (5 point) 
+     <div>Answer: telephone number: <input type="phone" maxlength="13"> </div></li>
+    <li>Create an input field with a radio button to select male and female exclusively (5 points)
+     <div>Answer: <input type="radio" name="gender">male <input type="radio" name="gender"> female</div></li>
+    <li>Create a submit and cancel button inside a form element (2 points)
+     <div>Answer: <button type="submit">Submit</button>
+<button type="cancel">Cancel</button></div></li>
+    <li>Create a datetime input format to get date as an input (3 points)
+     <div>Answer: <input type="date"></div></li>
     <li>Create a following table (5 points) </li>
     <img src="files/table-1.png" width=400px>
     <div>
-      <table>
+      <table border="1">
+        <tr>
+           <th style="padding-left:5px; padding-right:60px;">  First Name </th>
+           <th style="padding-left:5px; padding-right:60px;">  Last Name </th>
+           <th style="padding-left:5px; padding-right:30px;">  Points </th>
+        </tr>
+        <tr>
+           <td style="padding-left:5px;"> Jill </td>
+           <td style="padding-left:5px;"> Smith </td>
+           <td style="padding-left:5px;"> 50 </td>
+        </tr>
+        <tr>
+           <td style="padding-left:5px;"> Eve </td>
+           <td style="padding-left:5px;"> Jackson </td>
+           <td style="padding-left:5px;"> 94 </td>
+        </tr>
       </table>
     </div>
 
     <li>Create a following table - border type does not matter (10 points) </li>
     <img src="files/table-2.gif">
     <div>
-      <table>
+      <table border="1">
+        <tr>
+           <th colspan="6"> Time Table </th>
+        </tr>
+        <tr>
+           <th rowspan="6"> Hours </th>
+           <th> Mon </th>
+           <th> Tue </th>
+           <th> Wed </th>
+           <th> Thu </th>
+           <th> Fri </th>
+        </tr>
+        <tr>
+           <td> Science </td>
+           <td> Maths </td>
+           <td> Science </td>
+           <td> Maths </td>
+           <td> Arts </td>
+        </tr>
+        <tr>
+           <td> Social </td>
+           <td> History </td>
+           <td> Englih </td>
+           <td> Social </td>
+           <td> Sports </td>
+        </tr>
+        <tr>
+           <th colspan="5"> Lunch </th>
+        </tr>
+        <tr>
+           <td> Science </td>
+           <td> Maths </td>
+           <td> Science </td>
+           <td> Maths </td>
+           <td rowspan="2"> Project </td>
+        </tr>
+        <tr>
+           <td> Social </td>
+           <td> History </td>
+           <td> Englih </td>
+           <td> Social </td>
+        </tr>
       </table>
     </div>
 
