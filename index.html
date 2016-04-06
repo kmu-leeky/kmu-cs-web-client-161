@@ -4,69 +4,92 @@
   <title>The real first homework</title>
 </head>
 <body>
-  <p style="font-size:200%;" id="kmu-id">KMU ID:</p>
-  <p style="font-size:200%;">Name:</p>
+  <p style="font-size:200%;" id="kmu-id">KMU ID:20153148</p>
+  <p style="font-size:200%;">Name:Autumn Go</p>
   <p style="font-size:150%;">This homework is to have you a chance to apply knowlege and tags that you learned during the WebClient Computing course. The answer should be written in a valid HTML form. <strong>You can write answers in Korean. If you have difficulties in understanding the question, please let me know!</strong>. <a href = "kmu-cs-web-client-161.slack.com">Slack</a> or <a href="mailto:leeky@kookmin.ac.kr">E-mail</a> <br>This homework has to be submitted by <time datetime="2016-04-07T23:59">April 7th.</time>. Late submission will be deducted 10% of points per each delayed day - no points after 10 days.</p>
 
   <h1>Understanding HTML Concepts</h1>
   <ol>
     <li>What does HTML stand for? (1 point) 
       <ul>
-        <li>H : </li>
-        <li>T : </li>
-        <li>M : </li>
-        <li>L : </li>
+        <li>H : Hyper</li>
+        <li>T : Text</li>
+        <li>M : Markup</li>
+        <li>L : Language</li>
       </ul>
     </li>
     <li>Describe difference between Markup language(HTML) and Programming language, such as Java (10 point)</li>
     <div>
-      Answer: 
+      Answer: Markup language is designed to format text and Programming language is an set of instructions to the computer to perform.
+	  The difference is that Markup language is interpreted by the browser but Programming language is compiled.
     </div>
     <li>Describe what do the following tags mean(4 point)</li>
     <ul>
-        <li>pre: </li>
-        <li>p: </li>
-        <li>br: </li>
-        <li>h1, h2, h3, h4, h5, h6: </li>
+        <li>pre: represents a block of preformatted text/is displayed in a fixed-width font and preserves both spaces and line breaks</li>
+        <li>p: separates "paragraph"</li>
+        <li>br: insert a new line</li>
+        <li>h1, h2, h3, h4, h5, h6: organizing contents hierarchically / the font size: h1 > h2 > h3 > h4 > h5 > h6</li>
       </ul>
     </li>
-    <li>Describe diffrence between using <q>strong, em</q> tag and <q>b, i</q> tag (5 point). Answer: </li>
-    <li>In the img tag, describe what <q>alt</q> tag means and how it differs from <q>title</q> attribute(5 point). Answer: </li>
-    <li>In table, describe difference between <q>th</q> and <q>td</q> (5 point). Answer: </li>
+    <li>Describe diffrence between using <q>strong, em</q> tag and <q>b, i</q> tag (5 point). 
+		Answer: The former things are implication/semantic and the latter things are simply styling.It means that if things like screenreader read contents interpreting meaning, the 'strong' and 'em' function as right.</li>
+    <li>In the img tag, describe what <q>alt</q> tag means and how it differs from <q>title</q> attribute(5 point). Answer: alt tag is a message 
+	that will be shown when the image is not available and it differs from title in that title always has explanation.</li>
+    <li>In table, describe difference between <q>th</q> and <q>td</q> (5 point). Answer: 'th' implies title of each column and 'td' is an element. </li>
   </ol>
 
   <h1>Using HTML Tags</h1>
   <ol>
-    <li>Write a html statement to make a link to http://cs.kookmin.ac.kr where the link string is KMU-CS (5 points) Answer: </li>
-    <li>Write a html statement to make a link to http://cs.kookmin.ac.kr where the link string is KMU-CS and opens in a new tab (5 points) Answer: </li>
-    <li>Write a html statement to make a link to http://cs.kookmin.ac.kr where the link shows a smiley.gif image in the figure folder (5 point) Answer: </li>
-    <li>Make a link to <q>kmu-id</q> paragraph in the begining of this homework (5 point) Answer: </li>
-    <li>In the next answer sentence, add extra importance to a string <q>fun</q>. (3 points) Answer: HTML homework is fun</li>
+    <li>Write a html statement to make a link to http://cs.kookmin.ac.kr where the link string is KMU-CS (5 points) Answer:<a href="http://cs.kookmin.ac.kr">KMU-CS</a> </li>
+    <li>Write a html statement to make a link to http://cs.kookmin.ac.kr where the link string is KMU-CS and opens in a new tab (5 points) Answer: <a href="http://cs.kookmin.ac.kr" target="_blank">KMU-CS</a></li>
+    <li>Write a html statement to make a link to http://cs.kookmin.ac.kr where the link shows a smiley.gif image in the figure folder (5 point) 
+	Answer: <a href="http://cs.kookmin.ac.kr"><img src="files/smiley.gif"></a></li>
+    <li>Make a link to <q>kmu-id</q> paragraph in the begining of this homework (5 point) Answer: <a href="#kmu-id">Go</a></li>
+    <li>In the next answer sentence, add extra importance to a string <q>fun</q>. (3 points) Answer: HTML homework is <b><i>fun</i></b></li>
     <li>Create a video rendering tag that will automatically play as soon as it is ready, continue to play (loop), and show control bar. video source in the files/movie.mp4 (5 point)</li>
     <div>
-      Answer: 
+      Answer: <video width="640" height="480" controls loop> <source src="files/movie.mp4" type=video/mp4>
     </div>
     <li>Add a PDF file to be rednered on a browser. source file - files/table-quiz.pdf (5 points)</li>
+	<div>
+	  Answer: <embed type="application/pdf" src="files/table-quiz.pdf" width="300" height="500" </embed>
+	</div>
     <li>Change the following ordered list to unordered list (2 point)
-      <ol>
+	  <ul>
         <li>apple</li>
         <li>banana</li>
-      </ol>
+	  </ul>
     </li>
     <li>Change the following ordered list numbering to capital roman character (5 point) 
-      <ol>
+      <ol type='I'>
         <li>apple</li>
         <li>banana</li>
       </ol>
     </li>
-    <li>Create an input field that gets 13 digit telephone number (5 point) Answer: </li>
-    <li>Create an input field with a radio button to select male and female exclusively (5 points) Answer: </li>
-    <li>Create a submit and cancel button inside a form element (2 points) Answer: </li>
-    <li>Create a datetime input format to get date as an input (3 points) Answer: </li>
+    <li>Create an input field that gets 13 digit telephone number (5 point) Answer: telephone number:<input type="phone" maxlength="13"></li>
+    <li>Create an input field with a radio button to select male and female exclusively (5 points) Answer: male<input type="radio" name="gender">female<input type="radio" name="gender"></li>
+    <li>Create a submit and cancel button inside a form element (2 points) Answer: <form><button type="submit">Submit</button><button type="cancel">Cancel</button></form></li>
+    <li>Create a datetime input format to get date as an input (3 points) Answer:<input type="date" > </li>
     <li>Create a following table (5 points) </li>
     <img src="files/table-1.png" width=400px>
     <div>
       <table>
+		<table border="2">
+		<tr>
+			<th>First Name</th>
+			<th>Last Name</th>
+			<th>Points</th>
+		</tr>
+		<tr>
+			<th>Jill</th>
+			<th>Smith</th>
+			<th>50</th>
+		</tr>
+		<tr>
+			<th>Eve</th>
+			<th>Jackson</th>
+			<th>94</th>
+		</tr>
       </table>
     </div>
 
@@ -74,6 +97,48 @@
     <img src="files/table-2.gif">
     <div>
       <table>
+		<table border="1">
+		<tr>
+			<th colspan="6">Time table</th>
+		</tr>
+		<tr>
+			<th rowspan="6">Hours</th>
+			<th>Mon</th>
+			<th>Tue</th>
+			<th>Wed</th>
+			<th>Thu</th>
+			<th>Fri</th>
+		</tr>
+		<tr>
+			<th>Science</th>
+			<th>Maths</th>
+			<th>Science</th>
+			<th>Maths</th>
+			<th>Arts</th>
+		</tr>
+		<tr>
+			<th>Social</th>
+			<th>History</th>
+			<th>English</th>
+			<th>Social</th>
+			<th>Sports</th>
+		</tr>
+		<tr>
+			<th colspan="5">Lunch</th>
+		</tr>
+		<tr>
+			<th>Science</th>
+			<th>Maths</th>
+			<th>Science</th>
+			<th>Maths</th>
+			<th rowspan="2">Project</th>
+		</tr>
+		<tr>
+			<th>Social</th>
+			<th>History</th>
+			<th>English</th>
+			<th>Social</th>
+		</tr>
       </table>
     </div>
 
