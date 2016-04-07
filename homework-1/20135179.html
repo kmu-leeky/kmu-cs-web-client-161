@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>The real first homework</title>
+</head>
+<body>
+<p style="font-size:200% " id="kmu-id"> KMU ID :<font color="#DC143C";> 20135179 </font> </p>
+<p style="font-size:200%;" > Name : <font color="#6495ED";> 김다은 </font> </p>
+<p style="font-size:150%;">This homework is to have you a chance to apply knowlege and tags that you learned during the WebClient Computing course. The answer should be written in a valid HTML form. <strong>You can write answers in Korean. If you have difficulties in understanding the question, please let me know!</strong>. <a href = "kmu-cs-web-client-161.slack.com">Slack</a> or <a href="mailto:leeky@kookmin.ac.kr">E-mail</a> <br>This homework has to be submitted by <time datetime="2016-04-07T16:30">April 7th. before the class begins at 16:30</time>. Late submission will be deducted 10% of points per each delayed day - no points after 10 days.</p>
+<h1>Understanding HTML Concepts</h1>
+<ol>
+<li>What does HTML stand for? (1 point)
+<ul>
+<font color="#DC143C">
+<li>H : Hyper </li>
+<li>T : Text </li>
+<li>M : Markup </li>
+<li>L : Language </li>
+</font>
+</ul>
+</li>
+<li>Describe difference between Markup language(HTML) and Programming language, such as Java (10 point)</li>
+<div>
+<font color="#DC143C">
+Answer: Markup언어는 구조적 데이터를 표현해주는 언어이다. HTML이 대표적인 markup언어인데, 단순한 텍스트 문서랑 비교하면 문서의 일부분이 제목이거나 다른부분이 리스트인 것을 명확히 할 수 있게 해준다.
+Programming언어는 데이터를 변형시켜서 사용되는 언어이다. 입력 데이터를 출력 데이터로 다시 써주는 CPU 인스트럭션을 만들어줌으로써 작동한다.
+</font>
+</div>
+<li>Describe what do the following tags mean(4 point)</li>
+<ul>
+<font color="#DC143C">
+<li>pre : 텍스트를 그대로 보여주는 태그, 공백 혹은 개행이 그대로 출력된다. </li>
+<li>p : 문단을 구분할 때 사용한다. </li>
+<li>br : 새로운 한 줄을 삽입할 때 사용한다. </li>
+<li>h1, h2, h3, h4, h5, h6 : 제목을 작성하는 태그, h 뒤에 숫자가 커질수록 작은 제목을 표시한다. </li>
+</font> </ul>
+</li>
+<li>Describe diffrence between using <q>strong, em</q> tag and <q>b, i</q> tag (5 point).
+<font color="#DC143C">
+<br> Answer : strong, em은 의미부여를 위함이고 b,i는 간단한 스타일링을 하기 위함이다.
+b,i는 앞이 보이지 않는 사람들에게는 효과가 없다.
+참고로, strong은 볼드체로 쓰는 것이고, em은 이탈릭체로 쓰는 것이다. </br></font> </li>
+<li> In the img tag, describe what <q>alt</q> tag means and how it differs from <q>title</q> attribute(5 point).
+<font color="#DC143C">
+<br> Answer : alt는 이미지가 이용될 수 없을 때 보여질 메세지이다.
+title은 이미지의 제목이다.
+alt는 이미지의 의미를 알려주는 역할이므로 title과는 다르다. </br></font> </li>
+<li>In table, describe difference between <q>th</q> and <q>td</q> (5 point).
+<font color="#DC143C">
+<br> Answer : th는 table head의 약자로, 표의 제목을 쓰는 역할이고 굵은 글씨체에 중앙정렬이 된다.
+td는 table data의 약자로, 셀을 만드는 역할이고 보통 글씨체에 왼쪽 정렬이 된다. </br>
+</font> </li>
+</ol>
+<h1>Using HTML Tags</h1>
+<ol>
+<li>Write a html statement to make a link to http://cs.kookmin.ac.kr where the link string is KMU-CS (5 points)
+<br> Answer : <a href="http://cs.kookmin.ac.kr">KMU-CS</a> </br></font> </li>
+<li>Write a html statement to make a link to http://cs.kookmin.ac.kr where the link string is KMU-CS and opens in a new tab (5 points)
+<br> Answer: <a href="http://cs.kookmin.ac.kr" target="_blank">KMU-CS</a> </br></li>
+<li>Write a html statement to make a link to http://cs.kookmin.ac.kr where the link shows a smiley.gif image in the figure folder (5 point)
+<br> Answer: <a href="http://cs.kookmin.ac.kr"><img src="smiley.gif"> </a> </br> </li>
+<li>Make a link to <q>kmu-id</q> paragraph in the begining of this homework (5 point)
+<br> Answer: <a href="index.html">kmu-id</a> </br> </li>
+<li>In the next answer sentence, add extra importance to a string <q>fun</q>. (3 points)
+<br> Answer: HTML homework is <mark> <font color="red";> fun </font><mark> </br> </li>
+<li>Create a video rendering tag that will automatically play as soon as it is ready, continue to play (loop), and show control bar. video source in the files/movie.mp4 (5 point)
+</li>
+<div>
+Answer: <video width="640" height="480" controls loop><source src="movie.mp4" type="video/mp4"></video>
+</div>
+<li>Add a PDF file to be rednered on a browser. source file - files/table-quiz.pdf (5 points)</li>
+<li>Change the following ordered list to unordered list (2 point)
+<ul type="1">
+<li>apple</li>
+<li>banana</li>
+</ul>
+</li>
+<li>Change the following ordered list numbering to capital roman character (5 point)
+<ol type="i">
+<li>apple</li>
+<li>banana</li>
+</ol>
+</li>
+<li>Create an input field that gets 13 digit telephone number (5 point)
+<br> Answer: <form> Your phone number(13 digit):
+<input type="number" ></form> </br> </li>
+<li>Create an input field with a radio button to select male and female exclusively (5 points)
+<br> Answer: <form>
+<input type="radio" name="gender" value="male" checked>Male<br>
+<input type="radio" name="gender" value="female">Female<br>
+</form> </br> </li>
+<li>Create a submit and cancel button inside a form element (2 points)
+<br> Answer:
+<input type="button" onclick="alert('Success to Submit!')" value="Submit">
+<input type="button" onclick="alert('Success to Cancel!')" value="Cancel">
+</form>
+</br> </li>
+<li>Create a datetime input format to get date as an input (3 points)
+<br> Answer:
+<form>
+Birthday (date and time):
+<input type="datatime" name="bdaytime">
+</form>
+</br> </li>
+<li>Create a following table (5 points) </li>
+<img src="files/table-1.png" width=400px>
+</style>
+<div>
+<table border="1" bordercolor="black" width="400">
+<tr align=left>
+<th>First Name</th>
+<th>Last Name</th>
+<th>Points</th>
+</tr>
+<tr>
+<td>Jill</td>
+<td>Smith</td>
+<td>50</td>
+</tr>
+<tr>
+<td>Eve</td>
+<td>Jackson</td>
+<td>94</td>
+</tr>
+</table>
+</div>
+<li>Create a following table - border type does not matter (10 points) </li>
+<img src="files/table-2.gif">
+<div>
+<style>
+table,th,td{
+border:1px solid black;
+border-collapse: collapse;}
+</style>
+<table>
+<tr>
+<th colspan="6">Time Table</th>
+</tr>
+<tr>
+<th rowspan="6">Hours</th>
+<th>Mon</th>
+<th>Tue</th>
+<th>Wed</th>
+<th>Thu</th>
+<th>Fri</th>
+</tr>
+<tr>
+<td>Science</td>
+<td>Maths</td>
+<td>Science</td>
+<td>Maths</td>
+<td>Arts</td>
+</tr>
+<tr>
+<td>Social</td>
+<td>History</td>
+<td>English</td>
+<td>Social</td>
+<td>Sports</td>
+</tr>
+<tr>
+<th colspan="5">Lunch</th>
+</tr>
+<tr>
+<td>Science</td>
+<td>Maths</td>
+<td>Science</td>
+<td>Maths</td>
+<td rowspan="2">Project</td>
+</tr>
+<tr>
+<td> Social</td>
+<td>History</td>
+<td>English</td>
+<td>Social</td>
+</tr>
+</table>
+</div>
+</body>
+</html>
