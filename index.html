@@ -1,10 +1,162 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Hello World</title>
+  <title>The real first homework</title>
 </head>
 <body>
-  Hello HTML!!
-fork test
-</body>
+  <p style="font-size:200%;" id="kmu-id"><a href=" http://cs.kookmin.ac.kr">KMU ID:</a>20145328</p>
+  <p style="font-size:200%;">Name:권유상</p>
+  <p style="font-size:150%;">This homework is to have you a chance to apply knowlege and tags that you learned during the WebClient Computing course. The answer should be written in a valid HTML form. <strong>You can write answers in Korean. If you have difficulties in understanding the question, please let me know!</strong>. <a href = "kmu-cs-web-client-161.slack.com">Slack</a> or <a href="mailto:leeky@kookmin.ac.kr">E-mail</a> <br>This homework has to be submitted by <time datetime="2016-04-07T16:30">April 7th. before the class begins at 16:30</time>. Late submission will be deducted 10% of points per each delayed day - no points after 10 days.</p>
+
+  <h1>Understanding HTML Concepts</h1>
+  <ol>
+    <li>What does HTML stand for? (1 point) 
+      <ul>
+        <li>H : Hyper </li>
+        <li>T : Text </li>
+        <li>M : Mark up </li>
+        <li>L : Laguage </li>
+      </ul>
+    </li>
+    <li>Describe difference between Markup language(HTML) and Programming language, such as Java (10 point)</li>
+    <div>
+      Answer: html은 인테넷 서비스의 하나인 월드 와이드 웹을 통해 볼 수 있는 문서를 만들 때 사용하는 프로그래밍 언어의 한 종류이다.
+특히 하이퍼텍스트를 작성하기 위해서 개발되었으며 대부분의 웹페이지는 html로 만들어 졌다.
+별도의 컴파일러가 필요하지 않으며, 웹 브라우저에서 해석이 가능한 사용하기 쉬운 언어로 각광을 받고 있다.
+반면에 자바와 같은 언어는 프로그램을 개발하기 위해서 만들어 졌고 별도의 컴파일러가 필요하다.
+
+            
+    </div>
+    <li>Describe what do the following tags mean(4 point)</li>
+    <ul>
+        <li>pre: 다른 tag들은 필요없이 메모장에 적어놓은것들을 그대로 옮겨쓸 때 사용한다. </li>
+        <li>p: 문단을 나눌 때 사용한다</li>
+        <li>br: 줄바꿀 때 사용한다 </li>
+        <li>h1, h2, h3, h4, h5, h6: 화면에서 헤더부분의 큰 제목을 나타 낼때 쓴다. h1이 가장 크고 h6으로 갈수록 점점 작아진다. </li> 
+      </ul>
+    </li>
+    <li>Describe diffrence between using <q>strong, em</q> tag and <q>b, i</q> tag (5 point). Answer: 보기에는 같지만 stong과 em은 의미 부여가 되고, b와 i는 효과만 나타난다 </li>
+    <li>In the img tag, describe what <q>alt</q> tag means and how it differs from <q>title</q> attribute(5 point). Answer: alt는 그림을 삽입할 때 그림이 나오지 않으면 나타는 메세지이고,
+                                                                                                                           tittle은 마우스를 그림에 댈 때 나오는 텍스트 메세지 이다. </li>
+    <li>In table, describe difference between <q>th</q> and <q>td</q> (5 point). Answer: tr은 행을 나타내고, td는 열을 나타낸다. </li>
+  </ol>
+
+  <h1>Using HTML Tags</h1>
+  <ol>
+    <li>Write a html statement to make a link to http://cs.kookmin.ac.kr where the link string is KMU-CS (5 points) Answer: <a href=" http://cs.kookmin.ac.kr">KMU-CS </a></li>
+    <li>Write a html statement to make a link to http://cs.kookmin.ac.kr where the link string is KMU-CS and opens in a new tab (5 points) Answer: <a href=" http://cs.kookmin.ac.kr" target="blank">KMU-CS </a></li> 
+    <li>Write a html statement to make a link to http://cs.kookmin.ac.kr where the link shows a smiley.gif image in the figure folder (5 point) Answer: <a href=" http://cs.kookmin.ac.kr"> <img src=smiley.gif> </a> </li>
+    <li>Make a link to <q>kmu-id</q> paragraph in the begining of this homework (5 point) Answer: </li>
+    <li>In the next answer sentence, add extra importance to a string <q>fun</q>. (3 points) Answer: HTML homework is <strong>fun</strong></li>
+    <li>Create a video rendering tag that will automatically play as soon as it is ready, continue to play (loop), and show control bar. video source in the files/movie.mp4 (5 point)</li>
+    <div>
+      Answer: <video width="500" height="320" autoplay controls loop>
+              <source src="movie.mp4" type="video/mp4">
+              </video>
+    </div>
+    <li>Add a PDF file to be rednered on a browser. source file - files/table-quiz.pdf (5 points)</li>
+        <embed type="application/pdf" src="table-quiz.pdf" width="400" height="200"></embed>
+    <li>Change the following ordered list to unordered list (2 point)
+      <ul>
+        <li>apple</li>
+        <li>banana</li>
+      </ul>
+    </li>
+    <li>Change the following ordered list numbering to capital roman character (5 point) 
+      <ol type="I">
+        <li>apple</li>
+        <li>banana</li>
+      </ol>
+    </li>
+    <li>Create an input field that gets 13 digit telephone number (5 point) Answer: number : <input type="number" name="telephone number" maxlength="13"> </li>
+    <li>Create an input field with a radio button to select male and female exclusively (5 points) Answer: male <input type="radio"> female <input type="radio"> </li>
+    <li>Create a submit and cancel button inside a form element (2 points) Answer: <button type="submit">Submit</button>
+                                                                                   <button type="cancel">Cancel</button> </li>
+    <li>Create a datetime input format to get date as an input (3 points) Answer: date : <input type="date" name="Get date" </li>
+    <li>Create a following table (5 points) </li>
+
+    <div>
+     <table border="1">
+<tr>
+<td><b>First Name</b></td>
+<th><b>Last Name</b></td>
+<td><b>Points</b></td>
+</tr>
+
+<tr>
+<td>Jill</td>
+<td>Smith</td>
+<td>50</td>
+</tr>
+
+<tr>
+<td>Eve</td>
+<td>Jackson</td>
+<td>94</td>
+</tr>
+
+<table>
+    </div>
+
+    <li>Create a following table - border type does not matter (10 points) </li>
+ 
+    <div>
+      <table border="1">
+
+<tr>
+<th colspan="6">Time Table</th>
+</tr>
+
+<tr>
+<th rowspan="7">Hours</th>
+</tr>
+
+<tr>
+<th>Mon</th>
+<th>Tue</th>
+<th>Wed</th>
+<th>Thu</th>
+<th>Fri</th>
+</tr>
+
+<tr>
+<td>Science</td>
+<td>Maths</td>
+<td>Science</td>
+<td>Maths</td>
+<td>Arts</td>
+</tr>
+
+<tr>
+<td>Social</td>
+<td>History</td>
+<td>English</td>
+<td>Social</td>
+<td>Sports</td>
+</tr>
+
+<tr>
+<th colspan="5">Lunch</th>
+</tr>
+
+<tr>
+<td>Science</td>
+<td>Maths</td>
+<td>Science</td>
+<td>Maths</td>
+<td rowspan="2">Project</td>
+</tr>
+
+<tr>
+<td>Social</td>
+<td>History</td>
+<td>English</td>
+<td>Social</td>
+</tr>
+
+
+</table>
+    </div>
+
+  </body>
 </html>
