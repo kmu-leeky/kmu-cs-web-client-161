@@ -1,9 +1,179 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Hello World</title>
+  <title>The real first homework</title>
+
 </head>
 <body>
-  Hello HTML!!
-</body>
+
+
+  <p style="font-size:200%;" id="kmu-id">KMU ID: 20110591</p>
+  <p style="font-size:200%;">Name: 박종한</p>
+  <p style="font-size:150%;">This homework is to have you a chance to apply knowlege and tags that you learned during the WebClient Computing course. The answer should be written in a valid HTML form. <strong>You can write answers in Korean. If you have difficulties in understanding the question, please let me know!</strong>. <a href = "kmu-cs-web-client-161.slack.com">Slack</a> or <a href="mailto:leeky@kookmin.ac.kr">E-mail</a> <br>This homework has to be submitted by <time datetime="2016-04-07T23:59">April 7th.</time>. Late submission will be deducted 10% of points per each delayed day - no points after 10 days.</p>
+
+
+  <h1>Understanding HTML Concepts</h1>
+  <ol>
+    <li>What does HTML stand for? (1 point) 
+      <ul>
+        <li>H : Hyper</li>
+        <li>T : Text</li>
+        <li>M : Markup</li>
+        <li>L : Language</li>
+      </ul>
+    </li>
+    <li>Describe difference between Markup language(HTML) and Programming language, such as Java (10 point)</li>
+    <div>
+      Answer:  함수와 같이 돌려서 표현하는 프로그래밍 코드와 다르게 Markup Language는 굉장히 직관적이다. 또한 내부에서의 계산이 없이 표면적인 내용들을 다룬다.  
+    </div>
+    <li>Describe what do the following tags mean(4 point)</li>
+    <ul>
+        <li>pre:  입력하는 그대로 보여준다. 다만 안에 다른 태그를 사용할 수는 없다.</li>
+        <li>p:  Separates Paragraph. 분리된 단락.</li>
+        <li>br:  Insert a new line. 개행. </li>
+        <li>h1, h2, h3, h4, h5, h6:  겉보기에는 글자 크기만 달라보이나 사실은 heading 이라하여 각 항목의 우선순위를 구별하는데 쓰는것이 옳다. 위키백과를 생각해 봅시다.</li>
+      </ul>
+    </li>
+    <li>Describe diffrence between using <q>strong, em</q> tag and <q>b, i</q> tag (5 point). Answer:  strong 이나 em 태그는 의미를 부여하는 것이다. b,i와 겉보기의 형태는 같으니 시각 장애인용 프로그램을 사용하면 strong이나 em은 엑센트를 다르게 하여 출력한다.</li>
+    <li>In the img tag, describe what <q>alt</q> tag means and how it differs from <q>title</q> attribute(5 point). Answer:  title은 이미지가 출력되었을때 마우스 포인터를 올리면 팝업으로 뜨는 메세지. alt는 이미지 출력 실패시(링크 끊김 등등) 파일명대신 나오는 메세지이다.</li>
+    <li>In table, describe difference between <q>th</q> and <q>td</q> (5 point). Answer: th는 내용에 굵은 글자와 가운데 정렬이 된다. 큰 항목에다 사용하면 좋다. td는 일상적인 얇은 폰트로 나오고 자동으로 가운데 정렬이 되지는 않는다. </li>
+  </ol>
+
+  <h1>Using HTML Tags</h1>
+  <ol>
+    <li>Write a html statement to make a link to http://cs.kookmin.ac.kr where the link string is KMU-CS (5 points) Answer:  <a href="http://cs.kookmin.ac.kr">KMU-CS</a></li>
+    <li>Write a html statement to make a link to http://cs.kookmin.ac.kr where the link string is KMU-CS and opens in a new tab (5 points) Answer:  <a href="http://cs.kookmin.ac.kr" target="_blank">KMU-CS</a> </li>
+    <li>Write a html statement to make a link to http://cs.kookmin.ac.kr where the link shows a smiley.gif image in the figure folder (5 point) Answer:  <a href="http://cs.kookmin.ac.kr"><img src="files/smiley.gif"></a> </li>
+    <li>Make a link to <q>kmu-id</q> paragraph in the begining of this homework (5 point) Answer:  <a href="#kmu-id">DeepDarkFantasy</a></li>
+    <li>In the next answer sentence, add extra importance to a string <q>fun</q>. (3 points) Answer: HTML homework is <strong><q>fun fun</q></strong></li>
+    <li>Create a video rendering tag that will automatically play as soon as it is ready, continue to play (loop), and show control bar. video source in the files/movie.mp4 (5 point)</li>
+    <div>
+      Answer: <video width="640" height="480" controls loop autoplay>
+                <source src="files/movie.mp4" type="video/mp4">
+                </video>
+    </div>
+    <li>Add a PDF file to be rednered on a browser. source file - files/table-quiz.pdf (5 points)</li>
+    <div>
+      Answer : <embed type ="application/pdf" src="files/table-quiz.pdf" width="800" height="500"></embed>
+    </div>
+    <li>Change the following ordered list to unordered list (2 point)
+      <ul>
+        <li>apple</li>
+        <li>banana</li>
+      </ul>
+    </li>
+    <li>Change the following ordered list numbering to capital roman character (5 point) 
+      <ol type="I">
+        <li>apple</li>
+        <li>banana</li>
+      </ol>
+    </li>
+    <li>Create an input field that gets 13 digit telephone number (5 point) Answer:  <form> Telephone Number : <input type="phone" maxlength="13"> </form></li>
+    <li>Create an input field with a radio button to select male and female exclusively (5 points) Answer: <form> Male<input type="radio" name="choice"> Female<input type="radio" name="choice"></form>  </li>
+    <li>Create a submit and cancel button inside a form element (2 points) Answer: <form> <button type="submit"> Submit</button> <button type="cancle">Cancle</button></li>
+    <li>Create a datetime input format to get date as an input (3 points) Answer: <form> BirthDay <input type="date" name="birth"></form></li>
+    <li>Create a following table (5 points) </li>
+    <img src="files/table-1.png" width=400px>
+    <div>
+      <table border ="1">
+      <tr>
+      <th>First Name　　　　</th>
+      <th>Last Name　　　</th>
+      <th>Points　　　</th>
+      </tr>
+      <tr>
+      <td>Jill</td>
+      <td>Smith</td>
+      <td>50</td>
+      </tr>
+      <tr>
+      <td>Eve</td>
+      <td>Jackson</td>
+      <td>94</td>
+      </tr>
+      </table>
+    </div>
+
+    <li>Create a following table - border type does not matter (10 points) </li>
+    <img src="files/table-2.gif">
+     
+   <div>
+
+      <table style = "border: 1px solid black;
+       border-collapse: collapse;">
+      <tr style = "border: 1px solid black;
+       border-collapse: collapse;">
+      <th style = "border: 1px solid black;
+       border-collapse: collapse;" colspan="6">Time Table</th>
+      </tr>
+      <tr>
+      <th rowspan="7">Hours</th>
+      </tr>
+      <tr>
+      <th style = "border: 1px solid black;
+       border-collapse: collapse;">Mon</th>
+      <th style = "border: 1px solid black;
+       border-collapse: collapse;">Tue</th>
+      <th style = "border: 1px solid black;
+       border-collapse: collapse;">Wed</th>
+      <th style = "border: 1px solid black;
+       border-collapse: collapse;">Thu</th>
+      <th style = "border: 1px solid black;
+       border-collapse: collapse;">Fri</th>
+      </tr>
+      <tr>
+      <td style = "border: 1px solid black;
+       border-collapse: collapse;">Science</td>
+      <td style = "border: 1px solid black;
+       border-collapse: collapse;">Maths</td>
+      <td style = "border: 1px solid black;
+       border-collapse: collapse;">Science</td>
+      <td style = "border: 1px solid black;
+       border-collapse: collapse;">Maths</td>
+      <td style = "border: 1px solid black;
+       border-collapse: collapse;">Arts</td>
+      </tr>
+      <tr>
+      <td style = "border: 1px solid black;
+       border-collapse: collapse;">Social</td>
+      <td style = "border: 1px solid black;
+       border-collapse: collapse;">History</td>
+      <td style = "border: 1px solid black;
+       border-collapse: collapse;">English</td>
+      <td style = "border: 1px solid black;
+       border-collapse: collapse;">Social</td>
+      <td style = "border: 1px solid black;
+       border-collapse: collapse;">Sports</td>
+      </tr>
+      <tr>
+      <th colspan="5"  style = "border: 1px solid black;
+       border-collapse: collapse;">Lunch</th>
+      </tr>
+      <tr>
+      <td style = "border: 1px solid black;
+       border-collapse: collapse;">Science</td>
+      <td style = "border: 1px solid black;
+       border-collapse: collapse;">Maths</td>
+      <td style = "border: 1px solid black;
+       border-collapse: collapse;">Science</td>
+      <td style = "border: 1px solid black;
+       border-collapse: collapse;">Maths</td>
+      <td rowspan="2"  style = "border: 1px solid black;
+       border-collapse: collapse;">Project</td>
+      </tr>
+      <tr>
+      <td style = "border: 1px solid black;
+       border-collapse: collapse;">Social</td>
+      <td style = "border: 1px solid black;
+       border-collapse: collapse;">History</td>
+      <td style = "border: 1px solid black;
+       border-collapse: collapse;">English</td>
+      <td style = "border: 1px solid black;
+       border-collapse: collapse;">Social</td>
+      </tr>
+      </table>
+    </div>
+
+  </body>
+
 </html>
