@@ -76,16 +76,16 @@
     <li>Write a html statement to make a link to http://cs.kookmin.ac.kr where the link string is KMU-CS and opens in a new tab (5 points)<br> Answer: </li>
     <a href="http://cs.kookmin.ac.kr"target=_blank">KMU-CS</a><br>
 	<li>Write a html statement to make a link to http://cs.kookmin.ac.kr where the link shows a smiley.gif image in the figure folder (5 point)<br> Answer: </li>
-	<a href="http://cs.kookmin.ac.kr"><img src="C:\Users\Jin\Documents\GitHub\kmu-cs-web-client-161\files\smiley.gif"></a><br>
+	<a href="http://cs.kookmin.ac.kr"><img src="files\smiley.gif"></a><br>
     <li>Make a link to <q>kmu-id</q> paragraph in the begining of this homework (5 point)<br>
-	Answer: <a href="#kmu-id">ㅇㅇ</a></li><br>
+	Answer: <a href="#kmu-id">click here!</a></li><br>
     <li>In the next answer sentence, add extra importance to a string <q>fun</q>. (3 points) Answer: HTML homework is fun</li>
     <li>Create a video rendering tag that will automatically play as soon as it is ready, continue to play (loop), and show control bar. video source in the files/movie.mp4 (5 point)</li>
     <div>
-      Answer: <video src="C:\Users\Jin\Documents\GitHub\kmu-cs-web-client-161\files\movie.mp4" controls autoplay loop width="1024" height="576">HTML5 Video is required for this example</video>
+      Answer: <video src="files\movie.mp4" controls autoplay loop width="1024" height="576">HTML5 Video is required for this example</video>
     </div><br>
     <li>Add a PDF file to be rednered on a browser. source file - files/table-quiz.pdf (5 points)</li>
-	<embed src="C:\Users\Jin\Documents\GitHub\kmu-cs-web-client-161\files\table-quiz.pdf" width="500" height="375"/>
+	<embed src="files\table-quiz.pdf" width="500" height="375"/>
 
     <li>Change the following ordered list to unordered list (2 point)
       <ul>
@@ -99,21 +99,98 @@
         <li>banana</li>
       </ol>
     </li>
-    <li>Create an input field that gets 13 digit telephone number (5 point) Answer: </li>
-    <li>Create an input field with a radio button to select male and female exclusively (5 points) Answer: </li>
-    <li>Create a submit and cancel button inside a form element (2 points) Answer: </li>
-    <li>Create a datetime input format to get date as an input (3 points) Answer: </li>
+    <li>Create an input field that gets 13 digit telephone number (5 point) <br>Answer: </li>
+	<form>
+		<p><input type="text" onkeydown='return onlyNumber(event)' onkeyup='removeChar(event)' style='ime-mode:disabled;'></p>
+	</form>
+	<script>
+		function onlyNumber(event){
+			event = event || window.event;
+			var keyID = (event.which) ? event.which : event.keyCode;
+			if ( (keyID >= 48 && keyID <= 57) || (keyID >= 96 && keyID <= 105) || keyID == 8 || keyID == 46 || keyID == 37 || keyID == 39 ) 
+				return;
+			else
+				return false;
+		}
+		function removeChar(event) {
+			event = event || window.event;
+			var keyID = (event.which) ? event.which : event.keyCode;
+			if ( keyID == 8 || keyID == 46 || keyID == 37 || keyID == 39 || length.keyID > 13)//이부분 고치기
+				return;
+			else
+				event.target.value = event.target.value.replace(/[^0-9]/g, "");
+		}
+	
+</script>
+
+	//http://webskills.kr/archives/310 참고
+    <li>Create an input field with a radio button to select male and female exclusively (5 points)<br>Answer: </li>
+	<input type="radio"name="chk_info"value=""male">Female
+	<input type="radio"name="chk_info"value=""male">male
+    <li>Create a submit and cancel button inside a form element (2 points)<br>Answer: </li>
+	<button type="submit" value="Submit">Submit</button>
+	<button type="cancel" value="Submit">Submit</button>
+    <li>Create a datetime input format to get date as an input (3 points)<br>Answer: </li>
     <li>Create a following table (5 points) </li>
     <img src="files/table-1.png" width=400px>
     <div>
-      <table>
-      </table>
+      <table border="1" style="margin-center>
+		<caption>table-1</caption>
+		<tr>
+			<th style="padding:15px;">First Name</th>
+			<th style="padding:15px;">Last Name</th>
+			<th style="padding:15px;">Plints</th>
+		</tr>
+		<tr>
+			<td>Jill</td>
+			<td>Smith</td>
+			<td>50</td>
+		<tr>
+			<td>Eve</td>
+			<td>Jackskon</td>
+			<td>94</td>
+		</tr>
+      </table><br>
     </div>
 
     <li>Create a following table - border type does not matter (10 points) </li>
     <img src="files/table-2.gif">
     <div>
-      <table>
+		<table border="2">
+		<tr>
+			<th colspan="6">Time Table
+		</tr>
+		<tr>
+			<th rowspan="6">Hours
+			<th>Mon</th>
+			<th>The</th>
+			<th>Wed</th>
+			<th>Thu</th>
+			<th>Fri</th>
+		</tr>
+		<tr>	
+			<td>Scirnce</td>
+			<td>Maths</td>
+			<td>Science</td>
+			<td>Maths</td>
+			<td>Arts</td>
+		</tr>
+		<tr>
+			<td colspan="5">Lunch</td>
+		</tr>
+		<tr>
+			<td>Science</dt>
+			<td>Maths</td>
+			<td>Science</td>
+			<td>maths</td>
+			<td rowspan="2">Project</td>
+			
+		</tr>
+		<tr>
+			<td>Social</dt>
+			<td>History</td>
+			<td>English</td>
+			<td>maths</td>
       </table>
     </div>
 
