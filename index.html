@@ -1,81 +1,199 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8" />
   <title>The real first homework</title>
+  <style>
+  	#table1 th, td{
+  		text-align:left;
+  		padding: 3px 5px;
+  	}
+  	#table2 table, th, td{
+  		border: solid 1px black;
+  		border-collapse:collapse;
+  		padding : 4px;
+  	}
+  	.lunch {
+  		font-weight:bold;
+  		text-align:center;
+  	}
+  </style>
 </head>
 <body>
-  <p style="font-size:200%;" id="kmu-id">KMU ID:</p>
-  <p style="font-size:200%;">Name:</p>
+  <p style="font-size:200%;" id="kmu-id">KMU ID:20103035</p>
+  <p style="font-size:200%;">Name:설재민</p>
   <p style="font-size:150%;">This homework is to have you a chance to apply knowlege and tags that you learned during the WebClient Computing course. The answer should be written in a valid HTML form. <strong>You can write answers in Korean. If you have difficulties in understanding the question, please let me know!</strong>. <a href = "kmu-cs-web-client-161.slack.com">Slack</a> or <a href="mailto:leeky@kookmin.ac.kr">E-mail</a> <br>This homework has to be submitted by <time datetime="2016-04-07T23:59">April 7th.</time>. Late submission will be deducted 10% of points per each delayed day - no points after 10 days.</p>
 
   <h1>Understanding HTML Concepts</h1>
   <ol>
     <li>What does HTML stand for? (1 point) 
       <ul>
-        <li>H : </li>
-        <li>T : </li>
-        <li>M : </li>
-        <li>L : </li>
+        <li>H :Hyper </li>
+        <li>T :Text </li>
+        <li>M :Markup </li>
+        <li>L :Language </li>
       </ul>
     </li>
     <li>Describe difference between Markup language(HTML) and Programming language, such as Java (10 point)</li>
     <div>
-      Answer: 
+      Answer: 마크업랭기지는 자바의 Loop 같은것을 할 수 없음, 아키텍쳐 스트럭쳐를 표현, 무엇으로 뭘하는지만 표현, 다큐먼트의 형태, 기능 등을 표현해주고 실제로 그것의 기능은 없음<br/>
+      		  예를들어 &lt;red&gt;Web Client&lt;/red&gt;는 우리는 web client만 보이지만 실제로는 웹브라우저가 Web client를 red로 읽어드려 빨갛게 표현한다. 
     </div>
     <li>Describe what do the following tags mean(4 point)</li>
     <ul>
-        <li>pre: </li>
-        <li>p: </li>
-        <li>br: </li>
-        <li>h1, h2, h3, h4, h5, h6: </li>
+        <li>pre:보이는 그대로표현 스페이스, 엔터 다 포함 이 태그를 쓰지않으면 그냥 한줄로 나옴 </li>
+        <li>p:문단태그 그냥 글쓰는곳 그리고 block타입이다  </li>
+        <li>br: 줄바꿈 태그 엔터의 기능과 동일하다</li>
+        <li>h1, h2, h3, h4, h5, h6: 해드라인 속성 1부터 6까지는 크기를 나타냄  bold 속성이 들어가 진하게 표기되고 크기는 1이 제일크고 6이 제일작다. 그리고 block 속성을 갖고있다.</li>
       </ul>
     </li>
-    <li>Describe diffrence between using <q>strong, em</q> tag and <q>b, i</q> tag (5 point). Answer: </li>
-    <li>In the img tag, describe what <q>alt</q> tag means and how it differs from <q>title</q> attribute(5 point). Answer: </li>
-    <li>In table, describe difference between <q>th</q> and <q>td</q> (5 point). Answer: </li>
+    <li>Describe diffrence between using <q>strong, em</q> tag and <q>b, i</q> tag (5 point). <br/>
+    	Answer: strong과 em은 진하게, 기울임의 의미를 가진다. 시멘틱이라하여 태그에 의미가 부여되어 검색엔진이 이해할 수 있고 검색능력이 향상되게 도와준다. 최근에 자주사용하며 이렇게 변화해가는 추세이다.<br/>
+    	반면에 b와i는  strong과 em과 같은 기능을 하지만 의미가 들어있지 않고 단순히 모양과 효과만 잡아주는 형태이다.
+    </li>
+    <li>In the img tag, describe what <q>alt</q> tag means and how it differs from <q>title</q> attribute(5 point). <br/>
+    	Answer: alt는 이미지태그가 이미지를 불러오지 못할때 대체 문구로 예를들어 '이미지를 불러올 수 없음' 이런 문구로 이미지를 대체하는 글자를 나타낸다.<br/>
+    	반면에 title은 이미지에대한 이름을 나타낸다. img 태그가 이미지를 불러오고 그위에 마우스를 올려놓았을때 나오는 설명 같은 것이다.
+    </li>
+    <li>In table, describe difference between <q>th</q> and <q>td</q> (5 point). <br/>
+    	Answer: th와 td는 tr안에 생성되는 열의 값이다. 차이점은 th는 속성의 명칭을 나타내는 곳을 지칭한다. 가령, 이름 나이 주소로 구성되어있는 테이블에서 이름 나이 주소 에 th를 쓰고 아래 value값들은 td를 사용한다.<br/>
+    	그리고 th는 진하게 표기되며 가운데 정렬을하게된다. </li>
   </ol>
 
   <h1>Using HTML Tags</h1>
   <ol>
-    <li>Write a html statement to make a link to http://cs.kookmin.ac.kr where the link string is KMU-CS (5 points) Answer: </li>
-    <li>Write a html statement to make a link to http://cs.kookmin.ac.kr where the link string is KMU-CS and opens in a new tab (5 points) Answer: </li>
-    <li>Write a html statement to make a link to http://cs.kookmin.ac.kr where the link shows a smiley.gif image in the figure folder (5 point) Answer: </li>
-    <li>Make a link to <q>kmu-id</q> paragraph in the begining of this homework (5 point) Answer: </li>
-    <li>In the next answer sentence, add extra importance to a string <q>fun</q>. (3 points) Answer: HTML homework is fun</li>
+    <li>Write a html statement to make a link to http://cs.kookmin.ac.kr where the link string is KMU-CS (5 points) Answer: <a href="http://cs.kookmin.ac.kr">KMU-CS</a> </li>
+    <li>Write a html statement to make a link to http://cs.kookmin.ac.kr where the link string is KMU-CS and opens in a new tab (5 points) Answer:<a href="http://cs.kookmin.ac.kr" target="_blank">KMU-CS</a>  </li>
+    <li>Write a html statement to make a link to http://cs.kookmin.ac.kr where the link shows a smiley.gif image in the figure folder (5 point) Answer:<a href="http://cs.kookmin.ac.kr"><img src="files/smiley.gif" /></a>  </li>
+    <li>Make a link to <q>kmu-id</q> paragraph in the begining of this homework (5 point) Answer:<a href="#kmu-id">처음으로</a>  </li>
+    <li>In the next answer sentence, add extra importance to a string <q>fun</q>. (3 points) Answer: HTML homework is <strong>fun</strong></li>
     <li>Create a video rendering tag that will automatically play as soon as it is ready, continue to play (loop), and show control bar. video source in the files/movie.mp4 (5 point)</li>
     <div>
-      Answer: 
+      Answer: <video width="400" height="400" autoplay loop controls>
+      	 		<source src="files/movie.mp4" type="video/mp4">
+      		  </video>
     </div>
-    <li>Add a PDF file to be rednered on a browser. source file - files/table-quiz.pdf (5 points)</li>
+    <li>Add a PDF file to be rednered on a browser. source file - files/table-quiz.pdf (5 points)<br/>
+    	<embed type="application/pdf" src="files/table-quiz.pdf" width="800" hight="240"></embed>
+    </li>
     <li>Change the following ordered list to unordered list (2 point)
-      <ol>
+      <ul>
         <li>apple</li>
         <li>banana</li>
-      </ol>
+      </ul>
     </li>
     <li>Change the following ordered list numbering to capital roman character (5 point) 
-      <ol>
+      <ol type="I">
         <li>apple</li>
         <li>banana</li>
       </ol>
     </li>
-    <li>Create an input field that gets 13 digit telephone number (5 point) Answer: </li>
-    <li>Create an input field with a radio button to select male and female exclusively (5 points) Answer: </li>
-    <li>Create a submit and cancel button inside a form element (2 points) Answer: </li>
-    <li>Create a datetime input format to get date as an input (3 points) Answer: </li>
+    <li>Create an input field that gets 13 digit telephone number (5 point)<br/>
+    	 Answer: phone : <input type="phone" name="phoneNumber" maxlength="13" />
+    </li>
+    <li>Create an input field with a radio button to select male and female exclusively (5 points)<br/>
+    	 Answer: male:<input type="radio" name="gender" /> female:<input type="radio" name="gender"/> 
+    </li>
+    <li>Create a submit and cancel button inside a form element (2 points)<br/>
+    	 Answer: <button type="submit">Submit</button> <button type="reset">Cancel</button>
+    </li>
+    <li>Create a datetime input format to get date as an input (3 points) Answer:<input type="date" name="date" /></li>
+    	<div>
+    		<h3>추가:input태그 하나의 폼으로 합쳐 보았음</h3>
+    		<form>
+    			<table border="1">
+    				<tr>
+    					<td>phone</td>
+    					<td colspan="3"><input type="phone" name="phoneNumber" maxlength="13" /></td>
+    				</tr>
+    				<tr>
+    					<td>male</td>
+    					<td><input type="radio" name="gender" /></td>
+    					<td>female</td>
+    					<td><input type="radio" name="gender" /></td>
+    				</tr>
+    				<tr>
+    					<td>date</td>
+    					<td colspan="3"><input type="date" name="date" /></td>
+    				</tr>
+    				<tr>
+    					<td colspan="4"><center><button type="submit">Submit</button> <button type="reset">Cancel</button></center></td>
+    				</tr>
+    			</table>
+    		</form>
+    	</div>
     <li>Create a following table (5 points) </li>
     <img src="files/table-1.png" width=400px>
-    <div>
-      <table>
+    <div id="table1">
+    	Answer : 내부스타일을 이용해서 모양잡음
+      <table border="1"  width="400px">
+      	<tr>
+      		<th>First Name</th>
+      		<th>Last Name</th>
+      		<th>Points</th>
+      	</tr>
+      	<tr>
+      		<td>Jill</td>
+      		<td >Smith</td>
+      		<td>50</td>
+      	</tr>
+      	<tr>
+      		<td>Eve</td>
+      		<td>Jackson</td>
+      		<td>94</td>
+      	</tr>
       </table>
     </div>
 
     <li>Create a following table - border type does not matter (10 points) </li>
     <img src="files/table-2.gif">
-    <div>
-      <table>
+    <div id="table2">
+    	Answer: 내부스타일에서 table2 ID와 lunch부분을 위한 lunch class를 만들어 모양잡음
+      <table width="405px">
+      	<tr>
+      		<th colspan="6">Time Table</th>
+      	</tr>
+      	<tr>
+      		<th rowspan="6">Hours</th>
+      		<th>Mon</th>
+      		<th>Tue</th>
+      		<th>Wed</th>
+      		<th>Thu</th>
+      		<th>Fri</th>
+      	</tr>
+      	<tr>
+      		<td>Science</td>
+      		<td>Maths</td>
+      		<td>Science</td>
+      		<td>Maths</td>
+      		<td>Arts</td>
+      	</tr>
+      	<tr>
+      		<td>Social</td>
+      		<td>History</td>
+      		<td>English</td>
+      		<td>Social</td>
+      		<td>Sports</td>
+      	</tr>
+      	<tr>
+      		<td colspan="5" class="lunch">Lunch</td>
+      	</tr>
+      	<tr>
+      		<td>Science</td>
+      		<td>Maths</td>
+      		<td>Science</td>
+      		<td>Maths</td>
+      		<td rowspan="2">Project</td>
+      	</tr>
+      	<tr>
+      		<td>Social</td>
+      		<td>History</td>
+      		<td>English</td>
+      		<td>Social</td>
+      	</tr>
       </table>
     </div>
 
   </body>
+
 </html>
