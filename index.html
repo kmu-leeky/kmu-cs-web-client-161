@@ -1,81 +1,260 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>The real first homework</title>
+    <title>The real first homework</title>
 </head>
 <body>
-  <p style="font-size:200%;" id="kmu-id">KMU ID:</p>
-  <p style="font-size:200%;">Name:</p>
-  <p style="font-size:150%;">This homework is to have you a chance to apply knowlege and tags that you learned during the WebClient Computing course. The answer should be written in a valid HTML form. <strong>You can write answers in Korean. If you have difficulties in understanding the question, please let me know!</strong>. <a href = "kmu-cs-web-client-161.slack.com">Slack</a> or <a href="mailto:leeky@kookmin.ac.kr">E-mail</a> <br>This homework has to be submitted by <time datetime="2016-04-07T23:59">April 7th.</time>. Late submission will be deducted 10% of points per each delayed day - no points after 10 days.</p>
+    <p style="font-size:200%;" id="kmu-id">KMU ID: 20153229</p>
+    <p style="font-size:200%;">Name: 정형섭</p>
+    <p style="font-size:150%;">This homework is to have you a chance to apply knowlege and tags that you learned during the WebClient Computing course. The answer should be written in a valid HTML form. <strong>You can write answers in Korean. If you have difficulties in understanding the question, please let me know!</strong>. <a href="kmu-cs-web-client-161.slack.com">Slack</a> or <a href="mailto:leeky@kookmin.ac.kr">E-mail</a> <br>This homework has to be submitted by <time datetime="2016-04-07T16:30">April 7th. before the class begins at 16:30</time>. Late submission will be deducted 10% of points per each delayed day - no points after 10 days.</p>
 
-  <h1>Understanding HTML Concepts</h1>
-  <ol>
-    <li>What does HTML stand for? (1 point) 
-      <ul>
-        <li>H : </li>
-        <li>T : </li>
-        <li>M : </li>
-        <li>L : </li>
-      </ul>
+    <h1>Understanding HTML Concepts</h1>
+    <ol>
+        <li>
+            What does HTML stand for? (1 point)
+            <ul>
+                <li>H :Hyper </li>
+                <li>T :Test </li>
+                <li>M :Mark-up </li>
+                <li>L :Language</li>
+            </ul>
+        </li>
+        <li>Describe difference between Markup language(HTML) and Programming language, such as Java (10 point)</li>
+        <div>
+            Answer: 마크 업 언어는 구조화 된 데이터를 표현하는데 사용되는 언어이다. 예를 들어, HTML 문서의 일부가 제목 또는 일부 다른 부분이 평평한 텍스트 문서 비교함으로써, 목록을 지정할 수 있다.
+            반면 자바같은 스크립트 언어는 스크립트 언어가 모든 프로그래밍 언어의 서브 세트를 나타내는 것을 의미한다 컴파일보다는 해석 프로그래밍 언어이다.
+            이 언어는 컴파일 또는 해석되는지 여부를 항상 명확하지처럼 프로그래밍 언어, 스크립트 언어인지 여부를 항상 명확하지 않다
+        </div>
+        <li>Describe what do the following tags mean(4 point)</li>
+        <ul>
+            <li>pre: 문장형태 그대로 브라우저에 표현된다.  </li>
+            <li>p: 문자 가상 요소 선택자로 태그 내부의 특정정한 조건의 문자를 선택하는 선택자를 말한다.</li>
+            <li>br: 줄바꿈이다. </li>
+            <li>h1, h2, h3, h4, h5, h6: html문서에 제목을 넣는 요소이다.</li>
+        </ul>
+        </li>
+        <li>Describe diffrence between using <q>strong, em</q> tag and <q>b, i</q> tag (5 point). Answer: strong과 em은 의미 부여가 되고 시각장애인들에겐 b와 i태그는 효과가 없다. 또한 모바일에서는 b태그가 알아볼 수 없게 된다. </li>
+        <li>In the img tag, describe what <q>alt</q> tag means and how it differs from <q>title</q> attribute(5 point). Answer: alt 태그는 사진을 올렸을때 사진의 경로가 올바르지않거나 불러올수가 없을경우 사진의 텍스트가 뜬다. title 태그는 텍스트의 제목을 지정할수있다 안쓰면 주소가 출력된다. </li>
+        <li>In table, describe difference between <q>th</q> and <q>td</q> (5 point). Answer: th는 table head의 약자로 표의 제목을 쓰는 역할이고 tr태그는 table row의 약자로 가로줄을 만드는 역할이다. </li>
+    </ol>
+
+    <h1>Using HTML Tags</h1>
+    <ol>
+        <li>
+            Write a html statement to make a link to http://cs.kookmin.ac.kr where the link string is KMU-CS (5 points) Answer:
+            <!DOCTYPE html>
+            <html>
+            <head>
+                <title>html 링크 걸기</title>
+            </head>
+            <body>
+                <a href="http://cs.kookmin.ac.kr ">KMU-CS </a>
+            </body>
+        </html>
     </li>
-    <li>Describe difference between Markup language(HTML) and Programming language, such as Java (10 point)</li>
-    <div>
-      Answer: 
-    </div>
-    <li>Describe what do the following tags mean(4 point)</li>
+    <li>
+        Write a html statement to make a link to http://cs.kookmin.ac.kr where the link string is KMU-CS and opens in a new tab (5 points) Answer:
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>html 링크 걸기</title>
+        </head>
+        <body>
+            <a href="http://cs.kookmin.ac.kr" target="_blank"> KMU-CS </a>
+        </body>
+    </html>
+</li>
+<li>
+    Write a html statement to make a link to http://cs.kookmin.ac.kr where the link shows a smiley.gif image in the figure folder (5 point) Answer:
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>html 링크 걸기</title>
+    </head>
+    <body>
+        <a href="http://cs.kookmin.ac.kr "><img src="smiley.gif"></a>
+    </body>
+</html>
+</li>
+        <li>
+            Make a link to <q>kmu-id</q> paragraph in the begining of this homework (5 point) Answer:
+            <!DOCTYPE html>
+            <html>
+            <head>
+                <title>html 링크 걸기</title>
+            </head>
+            <body>
+                <a href="#kmu-id">학번보기</a>
+            </body>
+        </html>
+    </li>
+<li>In the next answer sentence, add extra importance to a string <q>fun</q>. (3 points) Answer: HTML homework is <em>fun</em></li>
+<li>Create a video rendering tag that will automatically play as soon as it is ready, continue to play (loop), and show control bar. video source in the files/movie.mp4 (5 point)</li>
+<div>
+    Answer:
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>html 비디오</title>
+    </head>
+    <body>
+        <video src="movie.mp4" controls autoplay loop muted preload="auto" poster="movie.jpg"></video>
+
+    </body>
+</html>
+</div>
+<li>
+    Add a PDF file to be rednered on a browser. source file - files/table-quiz.pdf (5 points)
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>html pdf파일걸기</title>
+    </head>
+    <body>
+        <embed type="application/pdf" src="table-quiz.pdf" width="600" height="150"></embed>
+    </body>
+</html>
+</li>
+<li>
+    Change the following ordered list to unordered list (2 point)
     <ul>
-        <li>pre: </li>
-        <li>p: </li>
-        <li>br: </li>
-        <li>h1, h2, h3, h4, h5, h6: </li>
-      </ul>
-    </li>
-    <li>Describe diffrence between using <q>strong, em</q> tag and <q>b, i</q> tag (5 point). Answer: </li>
-    <li>In the img tag, describe what <q>alt</q> tag means and how it differs from <q>title</q> attribute(5 point). Answer: </li>
-    <li>In table, describe difference between <q>th</q> and <q>td</q> (5 point). Answer: </li>
-  </ol>
-
-  <h1>Using HTML Tags</h1>
-  <ol>
-    <li>Write a html statement to make a link to http://cs.kookmin.ac.kr where the link string is KMU-CS (5 points) Answer: </li>
-    <li>Write a html statement to make a link to http://cs.kookmin.ac.kr where the link string is KMU-CS and opens in a new tab (5 points) Answer: </li>
-    <li>Write a html statement to make a link to http://cs.kookmin.ac.kr where the link shows a smiley.gif image in the figure folder (5 point) Answer: </li>
-    <li>Make a link to <q>kmu-id</q> paragraph in the begining of this homework (5 point) Answer: </li>
-    <li>In the next answer sentence, add extra importance to a string <q>fun</q>. (3 points) Answer: HTML homework is fun</li>
-    <li>Create a video rendering tag that will automatically play as soon as it is ready, continue to play (loop), and show control bar. video source in the files/movie.mp4 (5 point)</li>
-    <div>
-      Answer: 
-    </div>
-    <li>Add a PDF file to be rednered on a browser. source file - files/table-quiz.pdf (5 points)</li>
-    <li>Change the following ordered list to unordered list (2 point)
-      <ol>
         <li>apple</li>
         <li>banana</li>
-      </ol>
-    </li>
-    <li>Change the following ordered list numbering to capital roman character (5 point) 
-      <ol>
+    </ul>
+</li>
+<li>
+    Change the following ordered list numbering to capital roman character (5 point)
+    <ol type="I">
         <li>apple</li>
         <li>banana</li>
-      </ol>
+    </ol>
+</li>
+        <li>
+            Create an input field that gets 13 digit telephone number (5 point) Answer:
+            <!DOCTYPE html>
+            <html>
+            <head>
+                <title>전화번호 받기</title>
+            </head>
+            <body>
+                <form>
+                    phone:<input type="phone" name="myphone" maxlength="13"><br>
+                </form>
+            </body>
+        </html>
     </li>
-    <li>Create an input field that gets 13 digit telephone number (5 point) Answer: </li>
-    <li>Create an input field with a radio button to select male and female exclusively (5 points) Answer: </li>
-    <li>Create a submit and cancel button inside a form element (2 points) Answer: </li>
-    <li>Create a datetime input format to get date as an input (3 points) Answer: </li>
-    <li>Create a following table (5 points) </li>
-    <img src="files/table-1.png" width=400px>
-    <div>
-      <table>
-      </table>
-    </div>
+        <li>
+            Create an input field with a radio button to select male and female exclusively (5 points) Answer:
+            <!DOCTYPE html>
+            <html>
+            <head>
+                <title>성별선택</title>
+            </head>
+            <body>
+                <form>
+                    male<input type="radio" name="sex"> female<input type="radio" name="sex"><br>
+                </form>
+            </body>
+        </html>
+    </li>
+        <li>
+            Create a submit and cancel button inside a form element (2 points) Answer:
+            <!DOCTYPE html>
+            <html>
+            <head>
+                <title>성별선택</title>
+            </head>
+            <body>
+                <form>
+                    <button type="submit">Submit</button>
+                    <button type="cancel">Cancel</button>
+                </form>
+            </body>
+        </html>
+    </li>
+        <li>
+            Create a datetime input format to get date as an input (3 points) Answer:
+            <!DOCTYPE html>
+            <html>
+            <head>
+                <title>시간</title>
+            </head>
+            <body>
+                <form>
+                     date:<input type="date" name="mydatetime"><br>
+                </form>
+            </body>
+        </html>
+    </li>
+<li>Create a following table (5 points) </li>
+<img src="files/table-1.png" width=400px>
+<div>
+    <table border="1">
+        <tr>
+            <th style="padding:15px;">Firstname</th>
+            <th style="padding:15px;">Lastname</th>
+            <th style="padding:15px;">Points</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+    </table>
+</div>
 
-    <li>Create a following table - border type does not matter (10 points) </li>
-    <img src="files/table-2.gif">
-    <div>
-      <table>
-      </table>
-    </div>
+<li>Create a following table - border type does not matter (10 points) </li>
+<img src="files/table-2.gif">
+<div>
+    <table border="1">
+        <tr>
+            <th colspan="6">Time Table</th>
+        </tr>
+        <tr>
+            <th rowspan="6">Hours</th>
+            <th style="padding:15px;">Mon</th>
+            <th style="padding:15px;">Tue</th>
+            <th style="padding:15px;">Wed</th>
+            <th style="padding:15px;">The</th>
+            <th style="padding:15px;">Fir</th>
+        </tr>
+        <tr>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Arts</td>
+        </tr>
+        <tr>
+            <td>Social</td>
+            <td>History</td>
+            <td>English</td>
+            <td>Social</td>
+            <td>Sports</td>
+        </tr>
+        <tr>
+            <th colspan="5">Lunch</th>
+        </tr>
+        <tr>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Science</td>
+            <td>Maths</td>
+            <td rowspan="2">Project</td>
+        </tr>
+        <tr>
+            <td>Social</td>
+            <td>History</td>
+            <td>English</td>
+            <td>Social</td>
+        </tr>
+    </table>
+</div>
 
-  </body>
+</body>
 </html>
