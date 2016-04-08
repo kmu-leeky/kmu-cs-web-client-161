@@ -1,79 +1,213 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>The real first homework</title>
+  <title>homework 1-1</title>
 </head>
 <body>
-  <p style="font-size:200%;" id="kmu-id">KMU ID:</p>
-  <p style="font-size:200%;">Name:</p>
-  <p style="font-size:150%;">This homework is to have you a chance to apply knowlege and tags that you learned during the WebClient Computing course. The answer should be written in a valid HTML form. <strong>You can write answers in Korean. If you have difficulties in understanding the question, please let me know!</strong>. <a href = "kmu-cs-web-client-161.slack.com">Slack</a> or <a href="mailto:leeky@kookmin.ac.kr">E-mail</a> <br>This homework has to be submitted by <time datetime="2016-04-07T23:59">April 7th.</time>. Late submission will be deducted 10% of points per each delayed day - no points after 10 days.</p>
+  <p style="font-size:200%;" id="kmu-id">KMU ID:20133268</p>
+  <p style="font-size:200%;">Name:채승훈</p>
 
-  <h1>Understanding HTML Concepts</h1>
+
+
+  <!--
+
+
+  <p style="font-size:150%;">This homework is to have you a chance to apply knowlege and tags that you learned during the WebClient Computing course. The answer should be written in a valid HTML form. <strong>You can write answers in Korean. If you have difficulties in understanding the question, please let me know!</strong>. <a href = "kmu-cs-web-client-161.slack.com">Slack</a> or <a href="mailto:leeky@kookmin.ac.kr">E-mail</a> <br>This homework has to be submitted by <time datetime="2016-04-07T16:30">April 7th. before the class begins at 16:30</time>. Late submission will be deducted 10% of points per each delayed day - no points after 10 days.</p>
+
+  -->
+
+
+  <!--  
+  strong태그 : 글씨 굵게
+  <p style="font-size:200%;">글자 타입 설정</p>
+  하이퍼링크 태그 <a href = "url주소"> 내용 </a> 
+  <br>태그 : 엔터
+  <p> </p> paragraph태그
+
+
+
+  
+  
+  -->
+
+  <h1>Understanding HTML Concepts</h1><!-- h1:헤터 태그
+  제목을 작성하는 태그
+  글자가 점점 작아짐
+  -->
   <ol>
     <li>What does HTML stand for? (1 point) 
       <ul>
-        <li>H : </li>
-        <li>T : </li>
-        <li>M : </li>
-        <li>L : </li>
+        <li>H : hyper</li>
+        <li>T : text</li>
+        <li>M : markup</li>
+        <li>L : languaga</li>
+		<li>hypertext : 다른 페이지로의 연결을 위한 링크가 있는 텍스트 <br> markup language: 문서 내용 외에 문서의 논리 구조나 체제를 정의하는 언어</li>
       </ul>
     </li>
+
+	<!-- 
+	ol태그 : ordered list 태그
+	1, 2, 3, 4, 5, ...
+	A, B, C, D, E, ...
+	a, b, c, d, e, ...
+	Ⅰ,Ⅱ.Ⅲ.Ⅳ.Ⅴ,...
+	ⅰ,ⅱ,ⅲ,ⅳ,ⅴ,...
+	<ol type="1,A,a,i,I"> </ol>
+
+	ul태그 : unordered list
+	<ul type="disk"> </ul>   ->disk, circle, square
+
+
+	li태그 : list item
+	ol 또는 li의 항목
+	
+	-->
+
     <li>Describe difference between Markup language(HTML) and Programming language, such as Java (10 point)</li>
     <div>
-      Answer: 
+      Answer: <br>mark up language는 구조를 정의하는 언어로 title, sentence, list, link, references같은 구조가 있다. 따라서 html은 형태를 정의할 뿐이지 기능의 구현은 되지 않는다. 기능의 구현은 php 또는 자바스크립트를 사용하여야 한다. 또한 컴파일 역시 진행되지 않는다<br>
     </div>
     <li>Describe what do the following tags mean(4 point)</li>
     <ul>
-        <li>pre: </li>
-        <li>p: </li>
-        <li>br: </li>
+        <li>pre: 문서 작성과정에 쓰인 스페이스, 엔터(\n, \0)등을 쓰인 문자 그대로 태그에 상관없이 출력한다.</li>
+        <li>p: paragraph태그 하나의 문단을 만든다.</li>
+        <li>br: 줄바꿈 태그</li>
         <li>h1, h2, h3, h4, h5, h6: </li>
       </ul>
     </li>
-    <li>Describe diffrence between using <q>strong, em</q> tag and <q>b, i</q> tag (5 point). Answer: </li>
-    <li>In the img tag, describe what <q>alt</q> tag means and how it differs from <q>title</q> attribute(5 point). Answer: </li>
-    <li>In table, describe difference between <q>th</q> and <q>td</q> (5 point). Answer: </li>
+    <li>Describe diffrence between using <q>strong, em</q> tag and <q>b, i</q> tag (5 point).<br> Answer: <strong>strong 태그 : 굵은 글씨가 된다.</strong> <br> <em>i, em태그 : 기울임꼴이나 em태그는 강조를 하기때문에 em이 표준이다.</em><br> <b>b태그 : 글자를 굵은 글씨로 표현한다.<b><br> cf) font태그 : <pre><font color="blue" size="5", face="궁서"> 폰트태그 연습</pre></font> </li>
+    <li>In the img tag, describe what <q>alt</q> tag means and how it differs from <q>title</q> attribute(5 point). Answer: alt : alternate text 즉, 대체 텍스트 태그<br>title : 해당요소가 표현하는 정보 이외에 추가적 정보를 표현할때 사용<br>차이는 있으나 결론적으로 둘다 마우스를 올리면 설명이 나온다</li>
+
+
+
+
+	<li>In table, describe difference between <q>th</q> and <q>td</q> (5 point).
+	<br>Answer: tr : 행, td : 셀 태그 th태그 : 지정된 행에 제목을 표시할 수 있도록 두꺼운 글씨로 만들어 준다.<br> 먼저, &lt;table width="400" align="center" border="1" bgcolor="pink"&gt;처럼 테이블을 작성 후에 <td>태그를 사용하여 행을 작성하고 각 행에서 <td></tr>을 원하는 열의 개수만큼 사용한후 </tr>태그로 한 행을 마감한다.</li>
+
+	<!-- 
+	q태그 : "를 자동으로 붙여줌
+
+	http://cafe.naver.com/myprogramming/7300 <<테이블 태그 속성 모임
+	-->
+
+
+	<!--
+    <pre><li>In table, describe difference between <q>th</q> and <q>td</q> (5 point).
+
+	
+	pre 태그 연습
+
+	<br>Answer:  </pre></li>
+	-->
+
+
+
+	<!-- 
+	cf) http://blog.naver.com/rnfl0108/220656527325
+	-->
   </ol>
 
   <h1>Using HTML Tags</h1>
   <ol>
-    <li>Write a html statement to make a link to http://cs.kookmin.ac.kr where the link string is KMU-CS (5 points) Answer: </li>
-    <li>Write a html statement to make a link to http://cs.kookmin.ac.kr where the link string is KMU-CS and opens in a new tab (5 points) Answer: </li>
-    <li>Write a html statement to make a link to http://cs.kookmin.ac.kr where the link shows a smiley.gif image in the figure folder (5 point) Answer: </li>
-    <li>Make a link to <q>kmu-id</q> paragraph in the begining of this homework (5 point) Answer: </li>
-    <li>In the next answer sentence, add extra importance to a string <q>fun</q>. (3 points) Answer: HTML homework is fun</li>
-    <li>Create a video rendering tag that will automatically play as soon as it is ready, continue to play (loop), and show control bar. video source in the files/movie.mp4 (5 point)</li>
+    <li>Write a html statement to make a link to http://cs.kookmin.ac.kr where the link string is KMU-CS (5 points) Answer: <a href = "http://cs.kookmin.ac.kr">KMU-CS</a> or <a href="mailto:leeky@kookmin.ac.kr">E-mail</a></li>
+
+
+
+    <li>Write a html statement to make a link to http://cs.kookmin.ac.kr where the link string is KMU-CS and opens in a new tab (5 points) Answer: <a href = "http://cs.kookmin.ac.kr">KMU-CS</a> or <a href="mailto:leeky@kookmin.ac.kr" target="_blank">E-mail</a></li>
+	<!-- http://mainia.tistory.com/3786-->
+
+
+
+    <li>Write a html statement to make a link to http://cs.kookmin.ac.kr where the link shows a smiley.gif image in the figure folder (5 point) Answer: <a href = "http://cs.kookmin.ac.kr">
+	<img src="smiley.gif">
+	</a> or <a href="mailto:leeky@kookmin.ac.kr" target="_blank">E-mail</a> </li>
+
+
+
+
+    <li>Make a link to <q>kmu-id</q> paragraph in the begining of this homework (5 point) Answer: kmu id <br><a href="#kmu-id">Link</a></li> </li>
+
+
+
+    <li>In the next answer sentence, add extra importance to a string <q>fun</q>. (3 points) Answer: HTML homework is <strong>fun</strong></li>
+    <li>Create a video rendering tag that will automatically play as soon as it is ready, continue to play (loop), and show control bar. video source in the files/movie.mp4 (5 point)
+	<br>
+	
+	</li>
     <div>
-      Answer: 
+      Answer: <video width="300" height="250" controls loop autoplay>
+	<source src="files/movie.mp4" type="video/mp4">
     </div>
-    <li>Add a PDF file to be rednered on a browser. source file - files/table-quiz.pdf (5 points)</li>
+    <li>Add a PDF file to be rednered on a browser. source file - files/table-quiz.pdf (5 points) <div><embed type="application/pdf" src="table-quiz.pdf" width="320" height="540" </embed></div></li>
     <li>Change the following ordered list to unordered list (2 point)
-      <ol>
+      <ul>
         <li>apple</li>
         <li>banana</li>
-      </ol>
+      </ul>
     </li>
     <li>Change the following ordered list numbering to capital roman character (5 point) 
-      <ol>
+      <ol type="I">
         <li>apple</li>
         <li>banana</li>
       </ol>
     </li>
-    <li>Create an input field that gets 13 digit telephone number (5 point) Answer: </li>
-    <li>Create an input field with a radio button to select male and female exclusively (5 points) Answer: </li>
-    <li>Create a submit and cancel button inside a form element (2 points) Answer: </li>
-    <li>Create a datetime input format to get date as an input (3 points) Answer: </li>
+    <li>Create an input field that gets 13 digit telephone number (5 point) Answer: 
+	<form>2016-04-08
+		phonenumber :
+		<input type="text" name="num"><br>
+	</form></li>
+    <li>Create an input field with a radio button to select male and female exclusively (5 points) <br>Answer:<br> <input type="radio" name="radio">male<br>
+	<input type="radio" name="radio">female</li>
+    <li>Create a submit and cancel button inside a form element (2 points) <br>
+	Answer:<br>
+	<input type="submit" value="submit"> <input type="reset" value="cancel"></li>
+    <li>Create a datetime input format to get date as an input (3 points) 
+	<br>Answer: <input type="datetime"></li>
     <li>Create a following table (5 points) </li>
     <img src="files/table-1.png" width=400px>
     <div>
-      <table>
+      <table border="2">
+	  <tr>
+	  <th>First Name</th><th>Last Name</th><th>Point</th>
+	  </tr>
+	  <tr>
+	  <td>Jill</td><td>Smith</td><td>50</td>
+	  </tr>
+	  <tr>
+	  <td>Eve</td><td>Jackson</td><td>94</td>
+	  </tr>
       </table>
     </div>
 
     <li>Create a following table - border type does not matter (10 points) </li>
     <img src="files/table-2.gif">
     <div>
-      <table>
+      <table border="1">
+	  <tr>
+		<th colspan="6">Time Table</th>
+	  </tr>
+	  <tr>
+		<th rowspan="6">Hours</th>
+		<th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th>
+	  </tr>
+	  <tr>
+	  <td>Science</td><td>Maths</td><td>Science</td><td>Maths</td><td>Arts</td>
+	  </tr>
+	  <tr>
+	  <td>Social</td><td>History</td><td>English</td><td>Social</td><td>Sports</td>
+	  </tr>
+	  <tr>
+	  <th colspan="6">Lunch</th>
+	  </tr>
+	  <tr>
+	  <td>Science</td><td>Maths</td><td>Science</td><td>Maths</td><td rowspan="2">Project</td>
+	  </tr>
+	  <tr>
+	  <td>Social</td><td>History</td><td>English</td><td>Social</td>
+	  </tr>
+		
+		
+		
       </table>
     </div>
 
