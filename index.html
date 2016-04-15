@@ -1,79 +1,169 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <title>Hello HTML!!!</title>
+  <style>
+   .double {border-style: double;}
+   .groove {border-style: groove;}
+   .padding {padding-left: 130px;}
+   .serif {
+    font-family: Times, "Times New Roman", Georgia, serif;}
+	.sansserif {
+	 font-family: "Lucida Console", Courier, monospace;}
+	.cursive {
+	 font-family: cursive;}
+	.fantasy {
+	 font-family: fantasy;}
+	table, th, td {
+	 border: 1px groove black;}
+	 table {border-style: double; width: 30%;
+	 }
+ 	 th {height: 30px; vertical-align: center;}
+	 td {height: 30px; text-align: left; vertical-align: center;}
+	.text-1 {text-align: center;} 
+  </style>
+  
+</head>
   <title>The real first homework</title>
 </head>
 <body>
-  <p style="font-size:200%;" id="kmu-id">KMU ID:</p>
-  <p style="font-size:200%;">Name:</p>
+  <p style="font-size:200%;" id="kmu-id">KMU ID:20112608</p>
+  <p style="font-size:200%;">Name:Taegi Kim</p>
   <p style="font-size:150%;">This homework is to have you a chance to apply knowlege and tags that you learned during the WebClient Computing course. The answer should be written in a valid HTML form. <strong>You can write answers in Korean. If you have difficulties in understanding the question, please let me know!</strong>. <a href = "kmu-cs-web-client-161.slack.com">Slack</a> or <a href="mailto:leeky@kookmin.ac.kr">E-mail</a> <br>This homework has to be submitted by <time datetime="2016-04-07T23:59">April 7th.</time>. Late submission will be deducted 10% of points per each delayed day - no points after 10 days.</p>
 
   <h1>Understanding HTML Concepts</h1>
   <ol>
     <li>What does HTML stand for? (1 point) 
       <ul>
-        <li>H : </li>
-        <li>T : </li>
-        <li>M : </li>
-        <li>L : </li>
+        <li>H :Hyper </li>
+        <li>T :Text </li>
+        <li>M :Markup </li>
+        <li>L :Language </li>
       </ul>
     </li>
     <li>Describe difference between Markup language(HTML) and Programming language, such as Java (10 point)</li>
     <div>
-      Answer: 
+      Answer:HTML is a web programming language. Programming language like java or C works in more basic level of computing. also has more various functions  
     </div>
     <li>Describe what do the following tags mean(4 point)</li>
     <ul>
-        <li>pre: </li>
-        <li>p: </li>
-        <li>br: </li>
-        <li>h1, h2, h3, h4, h5, h6: </li>
+        <li>pre: place your key at the begining of the next line. just like the enter key </li>
+        <li>p:set the whole paragraph </li>
+        <li>br: new paragraph- make a new line </li>
+        <li>h1, h2, h3, h4, h5, h6:explains heirarchy </li>
       </ul>
     </li>
-    <li>Describe diffrence between using <q>strong, em</q> tag and <q>b, i</q> tag (5 point). Answer: </li>
-    <li>In the img tag, describe what <q>alt</q> tag means and how it differs from <q>title</q> attribute(5 point). Answer: </li>
-    <li>In table, describe difference between <q>th</q> and <q>td</q> (5 point). Answer: </li>
+    <li>Describe diffrence between using <q>strong, em</q> tag and <q>b, i</q> tag (5 point). Answer: strong and em both shows not just style but also a meaning that it is 'important' however b and i just shows the style</li>
+    <li>In the img tag, describe what <q>alt</q> tag means and how it differs from <q>title</q> attribute(5 point). Answer:alt is an abbreviation of alternative. alt appear only when the image you prepared is not avaliable. however the title tag appears all the time. </li>
+    <li>In table, describe difference between <q>th</q> and <q>td</q> (5 point). Answer:th and td both make a column. td just make a column. but th highlight the letters also give a meaning that it is important. </li>
   </ol>
 
   <h1>Using HTML Tags</h1>
   <ol>
-    <li>Write a html statement to make a link to http://cs.kookmin.ac.kr where the link string is KMU-CS (5 points) Answer: </li>
-    <li>Write a html statement to make a link to http://cs.kookmin.ac.kr where the link string is KMU-CS and opens in a new tab (5 points) Answer: </li>
-    <li>Write a html statement to make a link to http://cs.kookmin.ac.kr where the link shows a smiley.gif image in the figure folder (5 point) Answer: </li>
-    <li>Make a link to <q>kmu-id</q> paragraph in the begining of this homework (5 point) Answer: </li>
-    <li>In the next answer sentence, add extra importance to a string <q>fun</q>. (3 points) Answer: HTML homework is fun</li>
+    <li>Write a html statement to make a link to http://cs.kookmin.ac.kr where the link string is KMU-CS (5 points) Answer:<a href="http://cs.kookmin.ac.kr">KMU-CS</a> </li>
+    <li>Write a html statement to make a link to http://cs.kookmin.ac.kr where the link string is KMU-CS and opens in a new tab (5 points) Answer: <a href="http://cs.kookmin.ac.kr" target="blank">KMU-CS</a></li>
+    <li>Write a html statement to make a link to http://cs.kookmin.ac.kr where the link shows a smiley.gif image in the figure folder (5 point) Answer:<a href="http://cs.kookmin.ac.kr"><img src="files/smiley.gif" width="50"></a></li>
+    <li>Make a link to <q>kmu-id</q> paragraph in the begining of this homework (5 point) Answer:<a href="#kmu-id">jump to the id</a> </li>
+    <li>In the next answer sentence, add extra importance to a string <q>fun</q>. (3 points) Answer: HTML homework is <em>fun</em></li>
     <li>Create a video rendering tag that will automatically play as soon as it is ready, continue to play (loop), and show control bar. video source in the files/movie.mp4 (5 point)</li>
     <div>
-      Answer: 
+      Answer:<video src="files/movie.mp4"type="video/mps" width="1200" height="1200" autoplay controls loop> 
+<source src="files/movie.mp4"type="video/mps">
+</video>
+ 
     </div>
-    <li>Add a PDF file to be rednered on a browser. source file - files/table-quiz.pdf (5 points)</li>
+    <li>Add a PDF file to be rednered on a browser. source file - files/table-quiz.pdf.ans: (5 points)</li>
+	<br><br><li><embed type="application/pdf" src="files/table-quiz.pdf" width="1200" height="1200"></embed></li><br><br>
     <li>Change the following ordered list to unordered list (2 point)
-      <ol>
+      <ul>
         <li>apple</li>
         <li>banana</li>
-      </ol>
+      </ul>
     </li>
     <li>Change the following ordered list numbering to capital roman character (5 point) 
-      <ol>
+      <ol type="A">
         <li>apple</li>
         <li>banana</li>
       </ol>
     </li>
-    <li>Create an input field that gets 13 digit telephone number (5 point) Answer: </li>
-    <li>Create an input field with a radio button to select male and female exclusively (5 points) Answer: </li>
-    <li>Create a submit and cancel button inside a form element (2 points) Answer: </li>
-    <li>Create a datetime input format to get date as an input (3 points) Answer: </li>
+    <li>Create an input field that gets 13 digit telephone number (5 point) Answer:<input type="tel" value="0312525971717"> </li>
+    <li>Create an input field with a radio button to select male and female exclusively (5 points) Answer:male<input type="radio" name="sex">female<input type="radio" name="sex"></li>
+    <li>Create a submit and cancel button inside a form element (2 points) Answer:<form><button type="submit">submit</button><button type="cancle">cancle</button></form> </li>
+    <li>Create a datetime input format to get date as an input (3 points) Answer:<input type="datetime" value="2016">-<input type="datetime" value="04">-<input type="datetime" value="06"> </li>
     <li>Create a following table (5 points) </li>
     <img src="files/table-1.png" width=400px>
-    <div>
-      <table>
+    <div class="serif">
+      	
+      <table border="1px" collapse>
+	  <tr>
+	  <th>First name</th>
+	  <th>Last name</th>
+	  <th>Points</th>
+	  </tr>
+	  <tr>
+	  <td>Jill
+	  </td>
+	  <td>Smith
+	  </td>
+	  <td>50
+	  </td>
+	  </tr>
+	  <td>Eve
+	  </td>
+	  <td>Jackson
+	  </td>
+	  <td>94
+	  </td>
+	  <tr>
+	  </tr>
       </table>
     </div>
 
     <li>Create a following table - border type does not matter (10 points) </li>
     <img src="files/table-2.gif">
-    <div>
-      <table>
+    <div text-align: center;>
+      <table border="2">
+	  <tr>
+	  <th colspan="6">Time Table</th>
+	  </tr>
+	  <tr>
+	  <th rowspan="6">Hours</th>
+	  <th>Mon</th>
+	  <th>Tue</th>
+	  <th>Wed</th>
+	  <th>Thu</th>
+	  <th>Fri</th>
+	  </tr>
+	  <tr>
+	  <td>Science</td>
+	  <td>Maths</td>
+	  <td>Science</td>
+	  <td>Maths</td>
+	  <td>Arts</td>
+	  </tr>
+	  <tr>
+	  <td>Social</td>
+	  <td>History</td>
+	  <td>English</td>
+	  <td>Social</td>
+	  <td>Sports</td>
+	  </tr>
+	  <tr>
+	  <th colspan="5">Lunch</th>
+	  </tr>
+	  <tr>
+	  <td>Science</td>
+		<td>Maths</td>
+	  <td>Science</td>
+	  <td>Maths</td>
+	  <td rowspan="2">Project</td>
+	  </tr>
+	  <tr>
+	  <td>Social</td>
+	  <td>History</td>
+	  <td>English</td>
+	  <td>Social</td>
+	  </tr>
       </table>
     </div>
 
