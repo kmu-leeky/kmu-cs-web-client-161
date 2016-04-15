@@ -1,81 +1,234 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>The real first homework</title>
 </head>
+
 <body>
-  <p style="font-size:200%;" id="kmu-id">KMU ID:</p>
-  <p style="font-size:200%;">Name:</p>
+<<<<<<< HEAD
+  Hello HTML!!<br>	
+  My name is Jun young KIM
+</body>
+=======
+  <p style="font-size:200%;" id="kmu-id">KMU ID: 20123187</p>
+  <p style="font-size:200%;">Name: ±Ë¡ÿøµ</p>
   <p style="font-size:150%;">This homework is to have you a chance to apply knowlege and tags that you learned during the WebClient Computing course. The answer should be written in a valid HTML form. <strong>You can write answers in Korean. If you have difficulties in understanding the question, please let me know!</strong>. <a href = "kmu-cs-web-client-161.slack.com">Slack</a> or <a href="mailto:leeky@kookmin.ac.kr">E-mail</a> <br>This homework has to be submitted by <time datetime="2016-04-07T23:59">April 7th.</time>. Late submission will be deducted 10% of points per each delayed day - no points after 10 days.</p>
 
   <h1>Understanding HTML Concepts</h1>
   <ol>
     <li>What does HTML stand for? (1 point) 
       <ul>
-        <li>H : </li>
-        <li>T : </li>
-        <li>M : </li>
-        <li>L : </li>
+        <li>H : Hyper  </li>
+        <li>T : Text   </li>
+        <li>M : Markup </li>
+        <li>L : Launguage </li>
       </ul>
     </li>
     <li>Describe difference between Markup language(HTML) and Programming language, such as Java (10 point)</li>
-    <div>
+
+	<div>
       Answer: 
+
+	<p>  difference between Markup language and Programming language is thoes purpose that what we want to do with them </p>
+	
+        <p> A markup language is used to control the presentation of data, like "represent these user names as a bullet list or as a table".</p>
+
+	<p> A programming language is used to transform data. It does so by creating CPU instructions that rewrite the input data into the output; hopefully, the desired output. Examples of transforming data is to compute a sum out of a number of addends, or solving a system of differential equations from a set of conditions, or writing and reading from a tree-like structure in a consistent manner given a sequence of possibly simultaneous queries.</p>
+
+            
     </div>
-    <li>Describe what do the following tags mean(4 point)</li>
+   
+ <li>Describe what do the following tags mean(4 point)</li>
     <ul>
-        <li>pre: </li>
-        <li>p: </li>
-        <li>br: </li>
-        <li>h1, h2, h3, h4, h5, h6: </li>
+        <li>pre: view html source in "pre /pre" as it is  </li>
+        <li>p: separates "pragraph" </li>
+        <li>br:means "line break" , insert a new line </li>
+        <li>h1, h2, h3, h4, h5, h6: heading, hierachical contetnt organization   </li>
       </ul>
     </li>
-    <li>Describe diffrence between using <q>strong, em</q> tag and <q>b, i</q> tag (5 point). Answer: </li>
-    <li>In the img tag, describe what <q>alt</q> tag means and how it differs from <q>title</q> attribute(5 point). Answer: </li>
-    <li>In table, describe difference between <q>th</q> and <q>td</q> (5 point). Answer: </li>
+   
+    <li>Describe diffrence between using <q>strong, em</q> tag and <q>b, i</q> tag (5 point). 
+	<br>Answer: b,i is only styling but stong and em is implication/sementic </li> 
+
+
+
+    
+    <li>In the img tag, describe what <q>alt</q> tag means and how it differs from <q>title</q> attribute(5 point). 
+        <br>Answer: <br>alt is message tht will be shown when the image is not available 
+	<br> title is  a message when a pointer is over the image
+    </li>  
+    
+    <li>In table, describe difference between <q>th</q> and <q>td</q> (5 point).
+
+	<br> Answer: <br>th is table head, used to present to table title, it have bold and center alignment
+	<br> td is table row, means width line. it has left alignment
+ </li> 
+	
   </ol>
 
   <h1>Using HTML Tags</h1>
   <ol>
-    <li>Write a html statement to make a link to http://cs.kookmin.ac.kr where the link string is KMU-CS (5 points) Answer: </li>
+    <li>Write a html statement to make a link to http://cs.kookmin.ac.kr where the link string is KMU-CS (5 points) <br>
+	 Answer : <a href = "http://cs.kookmin.ac.kr"> KMU-CS </a>  </li>
+
     <li>Write a html statement to make a link to http://cs.kookmin.ac.kr where the link string is KMU-CS and opens in a new tab (5 points) Answer: </li>
-    <li>Write a html statement to make a link to http://cs.kookmin.ac.kr where the link shows a smiley.gif image in the figure folder (5 point) Answer: </li>
-    <li>Make a link to <q>kmu-id</q> paragraph in the begining of this homework (5 point) Answer: </li>
-    <li>In the next answer sentence, add extra importance to a string <q>fun</q>. (3 points) Answer: HTML homework is fun</li>
+	 Answer : <a href = "http://cs.kookmin.ac.kr" target="_blank"> KMU-CS </a>  </li>
+    <li>Write a html statement to make a link to http://cs.kookmin.ac.kr where the link shows a smiley.gif image in the figure folder (5 point) <br>
+	 Answer : <img src= "files/smiley.gif" alt="smile"> </li>
+
+    <li>Make a link to <q>kmu-id</q> paragraph in the begining of this homework (5 point) <br>
+         Answer : <a href ="#kmu-id"> kmu-id </a> </li>
+
+    <li>In the next answer sentence, add extra importance to a string <q>fun</q>. (3 points) <br>
+	Answer: HTML homework is <strong>fun</strong> </li>
+
     <li>Create a video rendering tag that will automatically play as soon as it is ready, continue to play (loop), and show control bar. video source in the files/movie.mp4 (5 point)</li>
+
     <div>
-      Answer: 
+      Answer:
+
+	<video width="640" height="480" controls loop autoplay>
+	<source src="files/movie.mp4" type=video/mp4>
+	</video>
+ 
     </div>
-    <li>Add a PDF file to be rednered on a browser. source file - files/table-quiz.pdf (5 points)</li>
+   
+ <li>Add a PDF file to be rednered on a browser. source file - files/table-quiz.pdf (5 points) <br>
+
+	<embed type="application/pdf" src="files/table-quiz.pdf" width = "600" height="400" </embed>
+
+	</li>
+
+
     <li>Change the following ordered list to unordered list (2 point)
-      <ol>
+      <ul>
         <li>apple</li>
         <li>banana</li>
-      </ol>
+      </ul>
     </li>
     <li>Change the following ordered list numbering to capital roman character (5 point) 
-      <ol>
+      <ol type="I">
         <li>apple</li>
         <li>banana</li>
       </ol>
     </li>
-    <li>Create an input field that gets 13 digit telephone number (5 point) Answer: </li>
-    <li>Create an input field with a radio button to select male and female exclusively (5 points) Answer: </li>
-    <li>Create a submit and cancel button inside a form element (2 points) Answer: </li>
-    <li>Create a datetime input format to get date as an input (3 points) Answer: </li>
+    <li>Create an input field that gets 13 digit telephone number (5 point) <br>
+	Answer:  phone number : <input type="phone" name="phon_number" maxlength = "13"   >
+
+
+</li>
+
+    <li>Create an input field with a radio button to select male and female exclusively (5 points) <br>
+	Answer: male <input type="radio" name="male"> female <input type="radio" name="female">    </li>
+    
+    <li>Create a submit and cancel button inside a form element (2 points) <br>
+	Answer: <button type="submit">submit</button>  <button type="reset">cancel</button>    </li>
+    <li>Create a datetime input format to get date as an input (3 points) <br>
+	Answer: <input type="date" name="mydate">    </li>
     <li>Create a following table (5 points) </li>
     <img src="files/table-1.png" width=400px>
     <div>
-      <table>
+
+
+<head>
+
+<style>
+
+	
+d	.downtable{
+		border-collapse: collapse;
+		text-align : center;
+		}
+
+
+</style>
+
+</head>
+
+      <table border="1" width = 50%>
+	<tr>
+	<td> <strong> First Name </strong> </td>
+	<td> <strong> Last Name </strong> </td>	
+	<td> <strong> Point </strong> </td>
+	</tr>
+
+	<tr>
+	<td>Jill</td>
+	<td>Smith</td>	
+	<td>50</td>
+	</tr>
+
+	<tr>
+	<td>Eve</td>
+	<td>Javkson</td>	
+	<td>94</td>
+	</tr>
       </table>
     </div>
 
     <li>Create a following table - border type does not matter (10 points) </li>
     <img src="files/table-2.gif">
+    
     <div>
-      <table>
+
+	<table style = "border-collapse: collapse; text-align : center;" border="1" width = 50% >
+	
+	<tr>
+	<th colspan="6"> Time Table </th>		
+	</tr>
+	
+	<tr>
+	<th rowspan="6">Hours</td>		
+	<th>Mon</th>
+	<th>Tue</th>
+	<th>Wed</th>
+	<th>Thu</th>
+	<th>Fri</th>
+	</tr>
+	
+	<tr>
+	<td> Science </td>		
+	<td> Maths </td>
+	<td> Sceince </td>
+	<td> Maths </td>
+	<td> Arts </td>
+	</tr>
+
+	<tr>
+	<td> Social </td>		
+	<td> History </td>
+	<td> English </td>
+	<td> Social </td>
+	<td> Sports </td>
+	</tr>
+
+	<tr>
+	<th colspan="6"> Lunch </th>
+	</tr>
+
+
+	<tr>
+	<td> Science </td>		
+	<td> Maths </td>
+	<td> Sceince </td>
+	<td> Maths </td>
+	<td> Arts </td>
+	</tr>
+
+	<tr>
+	<td> Social </td>		
+	<td> History </td>
+	<td> English </td>
+	<td> Social </td>
+	<td> Sports </td>
+	</tr>
+	
+
+
       </table>
     </div>
 
   </body>
+>>>>>>> refs/remotes/origin/homework-1
 </html>
