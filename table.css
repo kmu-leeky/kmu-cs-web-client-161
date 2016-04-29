@@ -1,0 +1,24 @@
+
+table, th, td{
+	width:700px;
+	height:30px;
+	border : 1px solid black;
+	border-collapse : collapse;	
+	font-family:Times, "Times New Roman",Gerogia, serif;
+	
+}
+td{
+	text-align:center;
+	color:#FF8C00;
+}
+th{
+	text-align:left;
+	color:#008B8B;
+}
+tr:nth-child(even){
+	background-color:#696969;
+}
+tr:hover{
+	background-color:#8B0000;
+}
+

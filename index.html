@@ -1,9 +1,115 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Hello World</title>
-</head>
-<body>
-  Hello HTML!!
-</body>
+  <meta charset = "utf8">
+  <head>
+    <title>The real first homework</title>
+  </head>
+  <body>
+    <p style="font-size:200%;" id="kmu-id">KMU ID:<b>20133192</b></p>
+    <p style="font-size:200%;">Name:<b>구민준</b></p>
+    <p style="font-size:150%;">This homework helps you to apply CSS skills that you learned during the class with pratical problem sets. The answer should be written in a valid HTML and CSS form that should be rendered in <strong>Chrome</strong> browser. You can write answers in Korean. <strong>The score for this homework will take twice more portion than the first homework</strong>. If you have difficulties in understanding the question, please let me know. <a href = "kmu-cs-web-client- 161.slack.com">Slack</a> or <a href="mailto:leeky@kookmin.ac.kr">E-mail</a> <br>This homework has to be submitted by <time datetime="2016-04-21T16:30">April 21st. class time</time>, and the solution will be provided during the class. No late submission is allowed this time due to the midterm.</p>
+    <h1>Understanding CSS Concepts</h1>
+    <ol>
+      <li>Describe difference between HTML and CSS with respect to the <em>roles</em> they take in a web page? (5 point)</li>
+      <div>Answer:
+	  <p><b>HTML은 집으로 비유하자면 뼈대를 구축하는 기능을 하는 것이고, CSS는 색상이나 효과를 그 집에 적용해 외관을 꾸미는 역할을 한다. 즉, HTML은 문서의 구조를 담당하고 CSS는 문서의 스타일링을 담당한다.</b></p>
+      </div>
+      <li>CSS stands for Cascading Style Sheet, what does <em>Cascading</em> means? (5 point)</li><p><b>하나의 요소에 가중치가 계산되어서 우선순위에 따라 가중적용이 된다. 우선순위가 적용되는 것이 폭포가 떨어지는 것과 비슷해서 cascading이라고 부른다. 예를들어, a:hover를 하면 a태그에 마우스를 올리는 곳만 바뀌는 것처럼 그 우선순위를 확인해 맞는 곳에 효과를 주는것이다.</b></p>
+      <li>List <em>three different methods</em> to use CSS with a HTML document and write a brief decription how to use it(5 point)</li>
+      <div>Answer:
+	  <p><b>1. External : css파일을 외부에 생성해서 html에서 link 태그를 이용해 접근한다. 장점은 다른 html 파일에서도 같은 css파일을 이용할 수 있다. <xmp><link ref="stylesheet" type="text/css" href="style.css"></xmp>를 이용하여 사용 가능하다.</b></p>
+	  <p><b>2. Internal : css파일을 html의 head 태그의 style 태그안에 입력해 body에서 사용한다. 단점은 다른 html 파일에서는 css 스타일을 이용할 수 없다.</b></p>
+	  <p><b>3. Inline : html의 body부분에 직접 쓰는 것이다. 예를들어, style="color:blue;"를 p 태그안에 넣어주면 p태그 안에서 그 스타일을 이용할 수 있다.</b></p>
+      </div>
+      <li>For the three different methods discussed at the previous problem, describe pros and cons (advantage and disadvantages) of them comparing with others(10 point)</li>
+      <div>Answer:
+	  <p><b>1. External : 장점은 다른 html 파일에서도 같은 css파일을 이용할 수 있다. 하나의 예로 하나의 css파일로 body의 변화는 없이 모바일용과 웹용을 만들수 있다.</b></p>
+	  <p><b>2. Internal : 장점은 html내에서 test하기가 쉽다. 단점은 다른 html 파일에서는 css 스타일을 이용할 수 없다. 그리고 파일의 크기가 Inline 방법보다는 아니지만 커진다.</b></p>
+	  <p><b>3. Inline : 장점은 테스트하기가 쉽다. 단점은 html코드가 복잡해지고 파일의 사이즈가 커지며, 재사용이 어렵다. 그리고 internal 과 external을 오버라이딩해서 예기치못한 오류가 발생할 수도 있다.</b></p>
+      </div>
+      <li>When we want to set font style using CSS, we can set generic family and font family. What are the difference between them?(5 point) Which one is recommended to state as a last option to show in a web-page? (5 point)</li>
+      <div>Answer:
+	  <p><b>font-family는 사용가능한 글꼴들의 집합체를 만들어주는 것이다. 그 안에 family-name(글꼴이름)을 나열하고, font-family의 제일 마지막에 generic-family를 선언한다. family-name에 적은 순서대로 다운로드 된 글씨체가 있는지 확인하는데 어떤 글씨체도 없다면 마지막의 generic-family를 이용한다.</b></p>
+      <p><b>두번째 질문의 답은 Generic-family 이다. 왜냐하면 다운로드 된 글씨체(family-name도 포함)가 아무것도 없다면 generic family의 글씨체를 이용해야 하기 때문이다.</b></p>
+      </div>
+      <li>When we want to control space of an element, we can use <em>padding</em> and <em>margin</em>. What are the difference between them?(5 point)</li>
+      <div>Answer:
+	  <b>margin은 border밖의 공간의 여백을 설정해주는 것이고, padding은 border와 content사이의 여백을 설정해주는 것이다. 쉽게말하면, margin은 외부여백을 설정해주는 것이고, padding은 내부여백을 설정해주는 것이다.</b>
+      </div>
+      <li>When we set font size using CSS, we can use units of <em>em, %, px</em>. How are they different? (5 point)</li>
+      <div>Answer:
+	  <p><b>1. em : 브라우저의 default 값이다. (1ea : 약 16px, 약 12pt)</b></p>
+	  <p><b>2. px : font size를 절댓값형태로 나타내는 것이다. 이걸 이용하면 반응형 웹에서는 창의 사이즈에따라 font size가 변하지 않는다. 그래서 em이나 %를 이용한다.</b></p>
+	  <p><b>3. % : 기본값으로부터 변경되는 폰트비율이다. 100%가 default이다.</b></p>      
+      </div>
+      <li>There are four ways to set conditional property for a sequence of elements (parent-child, siblings) - we called it as <em>Combinator</em> in the class. Describe the name of the four combinators with brief descripton and give a short example (10 point)</li>
+      <p><b>예시</b></p>
+	  <xmp><div></xmp>
+	  <xmp><p> HI </p></xmp>
+	  <xmp><p> My name is</p></xmp>
+	  <xmp><span><p>Koo Min Jun</p></span></xmp>
+	  <xmp></div></xmp>
+	  <xmp><p> Welcome to</p></xmp>
+	  <xmp><p> My homepage</p></xmp>
+	  
+	  
+	  <p><b>1. descendant selector</b></p>
+	  <p>태그선언을 두개 할때 그 사이에 공백을 두면 첫번째 태그안에 들어있는 두번째 태그에 효과적용이 된다.</p>
+	  <p>예를들어, div p{}를 선언하면 div내 선언된 p태그는 모두 효과가 적용이 된다. - HI와 My name is와 Koo Min Jun은 효과적용된다.</p>
+	  <p><b>2. Child selector(>)</b></p>
+	  <p>태그선언을 두개 할때 그 사이에 >를 넣으면 첫번째 태그안에 들어있는 두번째 태그중 두번째 태그가 다른 태그에 둘러싸여있지 않으면 효과적용이 된다. -HI와 My name is만 효과적용된다.</p>
+	  <p>예를들어, div>p{}를 선언하면 div내 선언된 p태그에는 효과 적용되겠지만, p를 둘러싸고있는 태그가 있다면 그 a태그는 적용이 되지않는다.</p>
+	  <p><b>3. Adjacent sibling(+)</b></p>
+	  <p>태그선언을 두개 할때 그 사이에 +를 넣으면 첫번째 태그가 끝난 다음의 두번째 태그 하나만만 적용이 된다. - Welcome to만 효과적용된다.</p>
+	  <p>예를들어, div+p{}를 선언하면 div태그가 끝난 다음 p에만 효과가 적용된다.</p>
+	  <p><b>4. General sibling(~)</b></p>
+	  <p>태그선언을 두개 할때 그 사이에 ~를 넣으면 첫번째 태그가 끝난 다음의 두번째 태그들 모두에 적용이 된다.- Welcome to와 My homepage에 효과적용된다.</p>	  
+	  <p>예를들어, div~p{}를 선언하면 div태그가 끝난 다음 선언되는 모든 p에 효과가 적용된다.</p>
+	</ol>
+
+    <h1>Make an aesthetic web page using CSS</h1>
+    <ol>
+      <li>Open <a href="border-shorthand.html">border-shorthand.html</a> and fill the <em>border-single</em> class to have the second div element to have the same effect with the first div element. <strong>You can use only one element in the border-single CSS class</strong>. (2 point) </li>
+      <li>Open <a href="last-paragraph.html">last-paragraph.html</a> and fill in the <i>style</i> tag to make only the last paragraph (the third one) to have the following effects(5 point)
+        <ul>
+          <li>Make the font color as red</li>
+          <li>Make the font to be bold</li>
+          <li>Make the font size larger (xx-large)</li>
+          <li>Set the font as Arial and its corresponding generic family</li>
+          <li>Make all the characters to UPPERCASE</li>
+        </ul>
+      </li>
+      <li>Using <a href="position.html">position.html</a> file, add style elements to make the paragraphs shown like below. (8 points)
+      <img style="display:block;width:50%;" src="position.png">
+      <br>Hints
+      <ul>
+        <li>For the first and fourth paragraph, you have to use fixed position</li>
+        <li>For the second paragraph, you have to specify margin to avoid overlapping with the top most paragraph</li>
+      </ul>
+      </li>
+      <li>Using <a href="table.html">table.html</a> file, modify the table to be shown like below. You must follow the rules below.(15 point)
+      <img style="display:block;width:80%;" src="table-sample.png">
+      <ul>
+        <li>Specific color, font, border style does not matter unless it is specifically mentioned below</li>
+        <li>Create an external css file (file name: table.css) and link it in the table.html</li>
+        <li>The table header elements have to be left aligned</li>
+        <li>The td elements have to be center aligned</li>
+        <li>When a mouse pointer is over a row, it has to change color including the table header row (green, ...)</li>
+        <li>Make every 2nd line (line number 2, 4, 6, 8, 10, ...) to have darker color</li>
+        <li>You do not need to set the background-color for td and th elements. If you  do so, making hover to change color will be harder as the solution is not covered in the class</li>
+        <li>Recommends to try various colors - <a href="http://www.w3schools.com/colors/colors_names.asp">Color Link</a>
+      </ul>
+      </li>
+      <li>
+      Create following navigation bar using <a href="navigation-bar.html">navigation-bar.html</a> with the following rules - original source: <a href="http://tour.ydp.go.kr/spfestival/">original page</a>. (25 points)
+      <ul>
+        <li>For the navigation bar background, you have to use <q>nav-bar-bg.png</q> file</li>
+        <li>For the navigation bar, you have to set the width as 100% and the height as 140px</li>
+        <li>The fonts size of characters is 20px, the color is #483535, and the font is Nanum Gothic</li>
+        <li>When the mouse point is over the link, it should show only one <q>hover-icon.png</q> file in a default location(left top) - you don't have to worry about making it same as the original site</li>
+        <img style="display:block;width:80%;" src="navigation-bar.png">
+      </ul>
+      </li>
+    </ol>
+  </body>
 </html>
