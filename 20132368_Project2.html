@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sangmin's Webpage</title>
+    <script src="https://code.jquery.com/jquery-3.0.0.js" integrity="sha256-jrPLZ+8vDxt2FnE1zvZXCkCcebI/C8Dt5xyaQBjxQIo=" crossorigin="anonymous"></script>
+    <style>
+      body {
+          margin:0;
+          font-family:Verdana;
+          width:100%;
+          position :relative;
+      }
+      p {
+          font-weight:bold;
+          font-size:35px;
+          font-family:Impact;
+          color:#2E2E2E;
+      }
+      ul {
+          list-style-type: none;
+          margin:0; 
+          padding: 0;
+          background-color:#2E2E2E;
+          position:fixed;
+          overflow: hidden;
+          width:100%;
+          z-index : 10;
+      }
+      li {
+          display: inline;
+          font-family: arial;
+      }
+      li a {
+          display: inline-block;
+          color: white;
+          font-size: 15px;
+          text-decoration: none;
+          padding: 20px 16px;
+      }
+      li a:hover {
+          background-color: #424242;
+          color:#00BFFF;
+      }
+      header {
+          background-image:url("http://www.goderichwebdesign.com/wp-content/uploads/2015/03/bg.png");
+          background-repeat:no-repeat;
+          background-size: cover;
+          padding : 10%;
+          margin:auto;
+      }
+      .img_header {
+          display: block;
+          max-width: 30%;
+          height: auto;
+          margin: auto;
+          border-radius: 50%;
+          width: 300px;
+          height: 300px;
+      }
+      .pagetop {
+          font-family:fantasy;
+          font-size: 35px;
+          color: white;
+          text-align: center;
+      }
+      section {
+          text-align:center;
+          padding:80px;
+          margin:0;
+      }
+      .scroll {
+          position: fixed;
+          right: 10%;
+          bottom: 10%;
+          width: 50px;
+          height: 50px;
+          z-index: 1;
+      }
+      #hello {
+          background-image :url("https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTVpDo_M4vJVlTRg2Y_i2i04wAOvJr9E6npn3_CoaNF4sRDg_Ru");
+          background-repeat: no-repeat;
+          background-size: cover;
+      }
+      #profile {
+          background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJLRU3ParMqqE2z8NmugAHkjIgxePKqCVoJET_j8-fEfPJBmAc");
+          background-repeat: no-repeat;
+          background-size: cover;
+      }
+      #photo {
+          background-image:url("https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcScs94RCh_Nt1xqfXEZh0cDDasQNu9vIO4qif6lIZm3Ql0HiuLP");
+          background-repeat: no-repeat;
+          background-size: cover;
+      }
+      #intro {
+          background-image:url("http://img1.gtsstatic.com/wallpapers/1c5da02393cae600fa11fdf3c3cc5a2b_large.jpeg") ;
+          background-repeat: no-repeat;
+          background-size: cover;
+      }
+      #email {
+          background-image:url("http://cfile24.uf.tistory.com/original/1558F93C4E5DA85E3617BA");
+          background-repeat: no-repeat;
+          background-size: cover;
+      }
+      table {
+          margin:auto;
+      }
+      table img {
+          margin:auto;
+          padding:50px;
+          max-width:300px;
+          max-height:300px;
+          border-radius :25%;
+          position: static;
+          cursor: pointer;
+      }
+      .profile_tb tr th{
+          width:300px;
+      }
+      .footer {
+          font-size: 20px;
+          text-align : center;
+          color:white;
+      }
+  </style>
+  </head>
+  <body id="pagetop">
+      <nav>
+          <ul align="right">
+              <li style="float:left"><a href="#pagetop" style="color:#6E6E6E">Sangmin's Webpage</a></ll>
+              <li><a href="#hello">인사말</a></li>
+              <li><a href="#profile">프로필</a></li>
+              <li><a href="#photo">사진첩</a></li>
+              <li><a href="#intro">소개</a></li>
+              <li><a href="#email">남기실 말씀</a></li>
+          </ul> 
+      </nav>
+      <header>
+              <div>
+                  <img class="img_header" src="https://scontent.xx.fbcdn.net/hphotos-xat1/v/t1.0-9/2545_920978441353299_7310284823405812884_n.jpg?oh=513769aa4270af01e05b40b7c95619fc&oe=57A8B110">
+              </div>
+              <div class="pagetop"><br>Welcome to Sangmin's Webpage<br><span style="color:black; font-size:25px; font-weight:bold">김상민 개인 홈페이지에 오신 것을 환영합니다</span></div>
+      </header>
+      <section id="hello">
+              <p align="center"><img src="http://cfile23.uf.tistory.com/image/26415F3F5405EB9E34FB3B" style="max-width:100px"><br>인사드립니다 !</p>
+              <div>안녕하십니까<br><br>
+                  김상민 개인 웹사이트에 오신 것을 진심으로 환영합니다<br><br>
+                  프로그래밍에 대한 호기심과 열정으로 가득 찬 국민대학교 컴퓨터공학부 2학년 김상민입니다<br><br>
+                  현재 웹 개발에 있어 부족한 점이 많아, '멋쟁이 사자처럼'이라는 프로그래밍 관련 대외활동에 4기 회원으로 들어가 코딩에 대해 깊이 공부하고 있습니다<br><br>
+                  앞으로 더 노력하고 발전하여 멋진 웹사이트를 만들겠습니다<br><br>
+                  감사합니다<br><br>
+              </div>
+          <hr>
+      </section>
+      <section id="profile"> 
+              <p align="center"><img src="http://findicons.com/files/icons/1580/devine_icons_part_2/128/account_and_control.png" style="max-width:75px"><br>프로필</p>
+              <table class="profile_tb">
+                  <tr>
+                      <th>EMAIL</th>
+                      <th>PHONE</th>
+                      <th>BIRTH</th>
+                  </tr>
+                  <tr>
+                      <td><img src="http://pickering-communications.com/wp-content/uploads/2014/02/iconmonstr-email-9-icon-1_zpsf6261ecf.png" style="max-width:50px"></td>
+                      <td><img src="http://simpleicon.com/wp-content/uploads/phone-symbol-2.png" style="max-width:50px"></imd></td>
+                      <td><img src="https://d30y9cdsu7xlg0.cloudfront.net/png/23243-200.png" style="max-width:50px"></td>
+                  </tr>
+                  <tr>
+                      <td>ksm3725@naver.com</td>
+                      <td>010 . 5208 . 8197</td>
+                      <td>1993 . 10 . 10</td>
+                  </tr>
+              </table>
+              <br><br><br>
+              <table class="profile_tb">
+                  <tr>
+                      <th><a href="https://www.facebook.com/ksm357"><img src="http://www.text4all.net/img/facebookIcon.png" style="max-width:50px"></a></th>
+                      <th><a href="https://github.com/ksm357"><img src="https://cdn4.iconfinder.com/data/icons/bettericons/354/github-128.png" style="max-width:50px"></a></th>
+                  </tr>
+                  <tr>
+                      <td>Facebook</td>
+                      <td>Github</td>
+                  </tr>
+              </table>
+          <hr>
+      </section>
+      <section id="photo">
+              <p align="center">
+                  <img src="http://cfile220.uf.daum.net/image/2223773456ACAD01046FC3" style="max-width:100px"><br>사진첩<br>
+                  <img onclick="myFunction()" style="max-width:100px; cursor:pointer" src="http://1.bp.blogspot.com/-oG24ZRXzRl4/VSjY1h4UiDI/AAAAAAAAAJ0/agUWb0qZmio/s1600/click-here-icon.png">
+                  <br><span id="clickme" style="font-size:20px;"></span>
+                  <table>
+                      <tr>
+                          <td><img id="image_1" onmouseenter="magic(this)" onmouseleave="normal(this)" src="https://scontent-sin1-1.xx.fbcdn.net/v/t1.0-9/73136_364203990364083_300963537_n.jpg?oh=023cf21b43144f360c8d8eb118d5e28e&oe=579B788E">
+                          <div id="image_text_1" align="center" style="background-color:#C0C0C0; height:50px; width:auto; position:relative; display:none; height:auto; text-weight:bold; font-family: fantasy; font-size:20px;">21살,<br>국민대학교 입학 !</div></td>
+                          <td><img id="image_2" onmouseenter="magic(this)" onmouseleave="normal(this)" id="image_2" src="https://scontent.xx.fbcdn.net/hphotos-xta1/v/t1.0-9/12274643_854738824643928_3133025004092225288_n.jpg?oh=88f83f0af0c4bed90198406f29e6116d&oe=57AB6CA3">
+                          <div id="image_text_2" align="center" style="background-color:#C0C0C0; height:50px; width:auto; position:relative; display:none; height:auto; text-weight:bold; font-family: fantasy; font-size:20px;">23살,<br>12월 육군 병장 만기 전역 !</div></td>
+                          <td><img id="image_3" onmouseenter="magic(this)" onmouseleave="normal(this)" id="image_3" src="https://scontent.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/10400149_904028639714946_461757868218396537_n.jpg?oh=5880aa66acc62e110b48ebc45d31edac&oe=57A62D6E">
+                          <div id="image_text_3" align="center" style="background-color:#C0C0C0; height:50px; width:auto; position:relative; display:none; height:auto; text-weight:bold; font-family: fantasy; font-size:20px;">수영을 좋아합니다 !<br>신나는 스노쿨링 !</div></td>
+                      </tr>
+                      <tr>
+                          <td><img id="image_4" onmouseenter="magic(this)" onmouseleave="normal(this)" id="image_4" src="https://scontent-sin1-1.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/1215_920978631353280_7091963155255713762_n.jpg?oh=05de52e32f84c159c3a86a887e23e7a7&oe=5794FF90">
+                          <div id="image_text_4" align="center" style="background-color:#C0C0C0; height:50px; width:auto; position:relative; display:none; height:auto; text-weight:bold; font-family: fantasy; font-size:20px;">인상깊었던 1004 개의 섬,<br>신안 !</div></td>
+                          <td><img id="image_5" onmouseenter="magic(this)" onmouseleave="normal(this)" id="image_5" src="https://scontent.xx.fbcdn.net/hphotos-xpa1/v/t1.0-9/12743485_999080226841965_678450102381392594_n.jpg?oh=742663494cd258e4629eda27045ad77d&oe=57AF21CB">
+                          <div id="image_text_5" align="center" style="background-color:#C0C0C0; height:50px; width:auto; position:relative; display:none; height:auto; text-weight:bold; font-family: fantasy; font-size:20px;">전역여행,<br>말레이시아 쇼핑투어 !</div></td>
+                          <td><img id="image_6" onmouseenter="magic(this)" onmouseleave="normal(this)" id="image_6" src="https://scontent.xx.fbcdn.net/hphotos-xlf1/v/t1.0-9/942867_920978528019957_6882751157396284473_n.jpg?oh=76e090cb432db54851e501e475bfa772&oe=57A5A5F8">
+                          <div id="image_text_6" align="center" style="background-color:#C0C0C0; height:50px; width:auto; position:relative; display:none; height:auto; text-weight:bold; font-family: fantasy; font-size:20px;">유명한<br>코타키나발루 시푸드 레스토랑 !</div></td>
+                      </tr>
+                  </table>
+              </p>
+              <hr>
+      </section>
+      <section id="intro">
+              <p align="center" style="margin:0;"><img src="http://lost-image.cdn.lostsaga.com/plazatalk/2015/02/4811782_20150211_3462748431_2baqGNYh.gif"><br>소개<br><br></p>
+                  <img id="show_1" src="http://travelerphs.dothome.co.kr/wp-content/uploads/2015/01/grammer.png" style="max-width:50px; cursor:pointer;"><span id="showed_1" style="display:none;"><strong>전공</strong> : 입학 당시 체육을 전공하였지만, 하고 싶은 것을 향해 나아가겠다는 열정 하나로 전과를 결심했고 마침내 올해 컴퓨터 공학 전공생이 되었습니다</span><br><br>
+                  <span id="showed_2" style="display:none;"><strong>취미</strong> : 음악감상, 영화감상을 좋아하며 기타를 자주 치곤 합니다. 여행 또한 최근 많은 시간을 쏟는 취미입니다</span><img  id="show_2"src="https://d30y9cdsu7xlg0.cloudfront.net/png/15757-200.png" style="max-width:50px; cursor:pointer;"><br><br>
+                  <img  id="show_3"src="http://www.iconpng.com/png/pictograms/running.png" style="max-width:50px; cursor:pointer;"><span id="showed_3" style="display:none;"><strong>특기</strong> : 운동은 모든 종목에 관심을 갖고 도전하길 좋아하고, 특히 축구와 수영을 잘합니다</span><br><br>
+                  <span id="showed_4" style="display:none;"><strong>성격</strong> :  활발한 성격으로 긍정적인 마인드를 가지고 매사에 임하고 있습니다. 사람들과 어울리는 것을 좋아하며 웃음이 많은 편입니다.</span><img id="show_4" src="https://pixabay.com/static/uploads/photo/2015/01/17/11/41/love-602140_960_720.png" style="max-width:50px; cursor:pointer;"><br><br>
+                  <img  id="show_5"src="http://www.starlings.co.kr/ucc/page/2090020150531231846.png" style="max-width:50px; cursor:pointer;"><span id="showed_5" style="display:none;"><strong>좌우명</strong> : 일체유심조 = <em>' 모든 것은 마음먹기에 따라 달렸다'</em></span>
+          <br><br><hr>
+      </section>
+      <section id="email">
+              <p align="center">남기실 말씀</p>
+              <form class="form-inline">
+                  <div class="form-group">
+                      <label for="exampleInputName2">NAME : </label>
+                      <input type="text" class="form-control" id="exampleInputName2" placeholder="성함을 입력해주세요" style="width:20%">
+                      <label for="exampleInputEmail2">EMAIL : </label>
+                      <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email주소를 입력해주세요" style="width:20%">
+                  </div>
+                  <div>
+                      <br>TEXT<br>
+                      <textarea class="form-control" rows="7" placeholder="글을 입력해주세요" style="width:70%"></textarea><br>
+                  </div>
+                  <br>
+                  <button type="button" id="send">전송하기</button>
+              </form>
+              <img src="https://t1.daumcdn.net/liveboard/emoticon/kakaofriends/v2/10008/emot_917.gif" style="max-width:100px"><br>
+          <hr>
+           <div class="footer">Copyright &copy; Sangmin 2016</div>
+      </section>
+      <div class="scroll" style="display:none;">
+          <a href="#pagetop" style="text-decoration:none;">TOP<img src="http://img.photobucket.com/albums/v731/elfogris/Avatar/snolax.gif"></a>
+      </div>
+      
+      <script type="text/javascript" src="function.js"></script>
+  </body>
+</html>
