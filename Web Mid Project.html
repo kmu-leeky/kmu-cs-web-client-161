@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+th{
+color:#008080;
+background-color:#F5F5F5;
+}
+td{
+padding:10px;
+background-color: #FFEFD5;
+color:#6A5ACD;
+}
+table,th,td{
+border: 1px solid #B22222;
+border-collapse:collapse;
+}
+a{
+text-decoration:none;
+}
+ul{
+list-style-type:none;
+margin:0;
+padding:0;
+overflow:hidden;
+background-color:#333;
+}
+li{
+display:inline;
+font-size:150%;
+font-family:'Nanum Brush Script', serif;
+}
+li a{
+display:inline-block;
+color:white;
+text-align:center;
+padding:14px 16px;
+text-decoration:none;
+}
+li a:hover{
+background-color:#111;
+}
+</style>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Final Project</title> 
+  <script type="text/javascript" src="project.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-2.2.3.min.js"></script>
+</head>
+<body>
+  <audio controls>
+    <source src="ywma.mp3" type="audio/mpeg" >
+  </audio>
+  <div class="first-div" ondblclick="changeLogo()">
+  </div>
+  
+  <div id="titletitle" class="project-title">
+  Introduce You to Liverpool Football Club!
+  </div>
+<ul>
+<li><a href="#bookmark-1">구단 소개</a></li>
+<li><a href="#bookmark-2">선수 소개</a></li>
+<li><a href="#bookmark-3">최근 경기</a></li>
+<li><a href="#bookmark-4">경기 일정</a></li>
+<li><a href="#bookmark-5">pictures</a></li>
+</ul>
+<div>
+<a href="http://www.liverpoolfc.com/" target="_blank"><img src="logo.png" width="20%" height="80%" align="left"></a>
+</div>
+<h1 a id="bookmark-1" class="first-title" onclick="showContent()">구단 소개</h1>
+<p class="team-content" style="visibility:hidden;">1892년 6월 3일에 창단되었다. English Premier League 소속이며,<br> 홈구장은 Liverpool의 Anfield 구장이다(약 5만명 수용가능)<br>
+18회의 리그 우승으로 EPL에서 두번째로 많은 우승을 한 클럽이다.<br> 라이벌 구단으로는 머지사이드 더비라고 불리는 에버튼과,레즈 더비로 불리는 맨체스터 유나이티드 가 있다.<br>
+한때 EPL Big4로 불리며 리그 강호의 모습을 보여줬었으나 최근 몇년동안 성적이 부진하였다. <br>하지만 새로운 감독 위르겐 클롭이 부임하며, 리그및 컵대회에서 강력한 모습을 보여주고 있다.
+<br>리버풀의 서포터즈는 콥이라 불리며 구단의 대표적인 응원가 로는 You'll Never Walk Alone(YWNA)이다.</p>
+<br><br>
+<h1 a id="bookmark-2" class="second-title">선수 소개</h1>
+<div style="float:left;">
+<button onclick="changeTable()">Change Table</button>
+<table>
+<tr>
+ <th>선수 이름</th>
+ <th>포지션</th>
+ <th>국적</th>
+ <th id="birth0">생년월일</th>
+ <th id="info0">신장,체중</th>
+</tr>
+<tr>
+ <td>Simon Mignolet</td>
+ <td>GK</td>
+ <th><img onmouseenter="bigger(this)" onmouseleave="normal(this)" src="bel.png" width="50%" height="50%"></th>
+ <td id="birth1">1988년 3월 6일</td>
+ <td id="info1">193cm 87kg</td>
+</tr>
+<tr>
+ <td>Nathaniel Clyne</td>
+ <td>RWB</td>
+ <th><img onmouseenter="bigger(this)" onmouseleave="normal(this)" src="england.png" width="50%" height="50%"></th>
+ <td id="birth2">1991년 4월 5일</td>
+ <td id="info2">175cm 67kg</td>
+</tr>
+<tr>
+ <td>Kolo Toure</td>
+ <td>CB</td>
+ <th><img onmouseenter="bigger(this)" onmouseleave="normal(this)" src="toure.png" width="50%" height="50%"></th>
+ <td id="birth3">1981년 3월 19일</td>
+ <td id="info3">178cm 74kg</td>
+</tr>
+<tr>
+ <td>Dejan Lovren</td>
+ <td>CB</td>
+ <th><img onmouseenter="bigger(this)" onmouseleave="normal(this)" src="dejan.png" width="50%" height="50%"></th>
+ <td id="birth4">1989년 7월 5일</td>
+ <td id="info4">188cm 84kg</td>
+</tr>
+<tr>
+ <td>Alberto Moreno</td>
+ <td>LWB</td>
+ <th><img onmouseenter="bigger(this)" onmouseleave="normal(this)" src="spain.png" width="50%" height="50%"></th>
+ <td id="birth5">1992년 7월 5일</td>
+ <td id="info5">171cm 65kg</td>
+</tr>
+<tr>
+ <td>Lucas Leiva</td>
+ <td>CM</td>
+ <th><img onmouseenter="bigger(this)" onmouseleave="normal(this)" src="brazil.png" width="50%" height="50%"></th>
+ <td id="birth6">1987년 1월 9일</td>
+ <td id="info6">179cm 73kg</td>
+</tr>
+<tr>
+ <td>Jordan Henderson</td>
+ <td>CM</td>
+ <th><img onmouseenter="bigger(this)" onmouseleave="normal(this)" src="england.png"width="50%" height="50%"></th>
+ <td id="birth7">1990년 6월 17일</td>
+ <td id="info7">182cm 67kg</td>
+</tr>
+<tr>
+ <td>Roberto Firmino</td>
+ <td>RAM</td>
+ <th><img onmouseenter="bigger(this)" onmouseleave="normal(this)" src="brazil.png"width="50%" height="50%"></th>
+ <td id="birth8">1991년 10월 2일</td>
+ <td id="info8">181cm 76kg</td>
+</tr>
+<tr>
+ <td>Philippe Coutinho</td>
+ <td>CAM</td>
+ <th><img onmouseenter="bigger(this)" onmouseleave="normal(this)" src="brazil.png" width="50%" height="50%"></th>
+ <td id="birth9">1992년 6월 12일</td>
+ <td id="info9">171cm 68kg</td>
+</tr>
+<tr>
+ <td>Adam Lallana</td>
+ <td>LAM</td>
+ <th><img onmouseenter="bigger(this)" onmouseleave="normal(this)" src="england.png"width="50%" height="50%"></th>
+ <td id="birth10">1988년 5월 10일</td>
+ <td id="info10">172cm 73kg</td>
+</tr>
+<tr>
+ <td>Daniel Sturridge</td>
+ <td>FW</td>
+ <th><img onmouseenter="bigger(this)" onmouseleave="normal(this)" src="england.png" width="50%" height="50%"></th>
+ <td id="birth11">1989년 9월 1일</td>
+ <td id="info11">178cm 76kg</td>
+</tr> 
+</table>
+</div>
+
+<div style="width:600px;height:100px;float:right;">
+<img id="image1" src="position.png" align:right float:right width="500" height="500" onclick="imgToggle()">
+<p id="strategy" style="float:center; font-size:200%; color:#778899;">4-2-3-1</p>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<details>
+ <summary><h1 a id="bookmark-3" class="third-title">최근 경기</h1></summary>
+ <div class="five-match">최근 5경기 전적
+ </div>
+ <div class="match-info">
+ 3승 1무 1패
+ <details>
+ <summary>4.15 04:05 vs도르트문트 Anfield(Home):</summary> <br>
+ <img src="match1.png">
+ <img src="match1-info.png"><br>
+ <a href="http://star.mt.co.kr/view/stview.php?no=2016041503212233486&type=1&outlink=1" target="_blank" class="article">클롭더비 안필드의 기적! 재현</a>
+ <br>
+ <a href="http://osen.mt.co.kr/article/G1110394763" target="_blank" class="article">Man Of The Match 평점 8.9 제임스 밀너!</a>
+ </details>
+ <details>
+ <summary>4.17 21:30 vs본머스 Vitality Stadium(Away):</summary><br>
+ <img src="match2.png">
+ <img src="match2-info.png">
+ <br>
+ <a href="http://www.sportsq.co.kr/news/articleView.html?idxno=155770" target="_blank" class="article">주전들 대거 휴식,리버풀 1.5군 라인업</a>
+ </details>
+ <details>
+ <summary>4.21 04:00 vs에버튼 Anfield(Home):</summary><br>
+ <img src="match3.png">
+ <img src="match3-info.png">
+ <br>
+ <a href="http://www.mydaily.co.kr/new_yk/html/read.php?newsid=201604210637302241&ext=na" target="_blank" class="article">리버풀,머지사이드 더비서 에버튼 4-0대파</a><br>
+ <a href="http://www.kookje.co.kr/news2011/asp/newsbody.asp?code=0600&key=20160421.99002031213" target="_blank" class="article">경기 선발 라인업 벨기에 공격수 오리기,벤테케 맞대결</a>
+ </details>
+ <details>
+ <summary>4.23 23:00 vs뉴캐슬 Anfield(Home):</summary><br>
+ <img src="match4.png">
+ <img src="match4-info.png">
+ <br>
+ <a href="http://sbssports.sbs.co.kr/news/news_content.jsp?article_id=S10007705055" target="_blank" class="article">베니테즈 더비,리버풀 홈에서 2-2무승부</a>
+ </details>
+ <details>
+ <summary>4.29 04:05 vs비야레알 El Madrigal(Away):</summary><br>
+ <img src="match5.png">
+ <img src="match5-info.png">
+ <br>
+ <a href="http://sports.donga.com/3/all/20160429/77847622/2" target="_blank" class="article">후반 추가시간 극적골 1-0패배</a><br>
+ <a href="http://www.goal.com/kr/match/%EB%B9%84%EC%95%BC%EB%A0%88%EC%95%8C-vs-%EB%A6%AC%EB%B2%84%ED%92%80/2229282/report" target="_blank" class="article">패배 원인 공격수의 부재</a>
+ </details>
+</details>
+</div>
+
+<div>
+ <p a id="bookmark-4" class="fourth-title" ondblclick="changes()">경기 일정 <-doubleClick</p>
+ <img id="imgg1" src="5match5.png" width="45%" height="45%" style="float:left; visibility:hidden">
+ <img id="imgg2" src="6match6.png" width="45%" height="45%" style="float:right; visibility:hidden">
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div>
+<p class="pictures" a id="bookmark-5">pictures</p>
+<figure class="caption">
+ <img src="jordan.png" width="45%" height="45%" style="float:left;" id="j1">
+ <figcaption><-Captain</figcaption>
+</figure>
+<figure class="caption">
+ <img src="klopp.png" width="45%" height="45%" style="float:right;" id="k1">
+ <figcaption>Director-></figcaption>
+</figure> 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<p class="vote2">외모투표</p>
+<p class="vote">Jordan Henderson<input type="checkbox"">Klopp<input type="checkbox">
+<button type="submit" class="vote3">투표하기</button></p>
+</div>
+<div>
+<img src="end.png" width=100% height=200px onclick="lastmention()">
+</div>
+</body>
+</html>

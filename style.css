@@ -1,0 +1,121 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanumbrushscript.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanumpenscript.css);
+@import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);	
+@import url(http://fonts.googleapis.com/earlyaccess/jejumyeongjo.css);	
+@import url(http://fonts.googleapis.com/earlyaccess/jejuhallasan.css);
+@import url(http://fonts.googleapis.com/earlyaccess/hanna.css);
+@import url(http://fonts.googleapis.com/earlyaccess/kopubbatang.css);
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+
+
+.first-div
+{
+	padding-top:120px;
+	padding-bottom:90px;
+	background-image:url("first-image.png");
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-color:#FF0000;
+}
+.project-title
+{
+	text-align:center;
+	font-size:200%;
+	font-family:Impact, Charcoal, sans-serif;
+	color:#D2B48C;
+}
+.first-title
+{
+	text-align:center;
+	font-size:200%;
+	color:#000080;
+	font-family: 'Nanum Brush Script', serif;
+	text-decoration:none;
+}
+.team-content
+{
+	text-align:justify;
+	font-size:150%;
+	color: #2F4F4F;
+	font-family: 'Nanum Brush Script', serif;
+}
+.second-title
+{
+	text-align:center;
+	font-size:200%;
+	color:#000080;
+	font-family:'Nanum Brush Script', serif;
+	text-decoration:none;
+}
+.third-title
+{
+	text-align:center;
+	font-size:300%;
+	color:#000080;
+	font-family: 'Nanum Brush Script', serif;
+}
+.fourth-title
+{
+	text-align:center;
+	font-size:300%;
+	color:#000080;
+	font-family: 'Nanum Brush Script', serif;
+}
+.five-match
+{
+	text-align:center;
+	font-size:250%;
+	color:red;
+	font-family: 'Nanum Gothic Coding', serif;
+}
+.pictures
+{
+	text-align:center;
+	font-size:350%;
+	color:#000080;
+	font-family: 'Nanum Brush Script', serif;
+}
+.match-info
+{
+	text-align:left;
+	font-size:150%;
+	color:#0000CD;
+	font-family: 'KoPub Batang', serif;
+}
+.article
+{
+	text-align:left;
+	font-size:120%;
+	color: #2F4F4F;	
+	font-family:'Jeju Hallasan', serif;
+}
+.caption
+{
+	font-size:150%;
+	color:red;
+    font-family:'Hanna', serif;
+}
+.vote2
+{
+	font-size:300%;
+	color:#483D8B;
+	font-family:'Jeju Hallasan', serif;
+	text-align:center;
+}
+.vote
+{
+	font-size:250%;
+	color:darkred;
+	font-family:'Jeju Hallasan', serif;
+}
+.css_test
+{
+	border:5px solid gray;
+}
+
+
+
